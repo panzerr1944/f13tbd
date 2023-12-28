@@ -9142,11 +9142,6 @@
 "ovc" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
-"ovw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/melee/classic_baton/police,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building/mall)
 "ovT" = (
 /obj/structure/debris/v4{
 	pixel_y = -2;
@@ -16880,7 +16875,7 @@ ayR
 ayR
 xgb
 cuI
-ovw
+xWc
 iej
 wNM
 wNM
