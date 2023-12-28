@@ -62,7 +62,7 @@
 	supervisors = "Enclave Upper Echelon."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpt
 	req_admin_notify = 1
-	exp_requirements = 600
+	exp_requirements = 1000
 
 	loadout_options = list(
 		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
