@@ -12441,11 +12441,11 @@
 	},
 /area/f13/caves)
 "oBe" = (
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
-/obj/item/storage/firstaid/emergency,
 /obj/structure/rack/shelf_metal,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},

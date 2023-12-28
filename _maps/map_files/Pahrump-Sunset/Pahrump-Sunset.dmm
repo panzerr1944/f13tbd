@@ -13701,9 +13701,6 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/f13/building/massfusion)
-"aWX" = (
-/turf/closed/wall/mineral/wood,
-/area/f13/building)
 "aWY" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -37316,13 +37313,6 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland/east)
-"iWb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13{
-	icon_state = "greenrustychess"
-	},
-/area/f13/building/massfusion)
 "iWe" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -57124,7 +57114,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/semen,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "rZT" = (
@@ -67188,25 +67177,6 @@
 	icon_state = "savannah6"
 	},
 /area/f13/brotherhood/leisure)
-"wKS" = (
-/obj/effect/decal/cleanable/semen/femcum,
-/obj/structure/reagent_dispensers/rainwater_tank{
-	pixel_x = 1;
-	pixel_y = 22;
-	density = 0
-	},
-/obj/machinery/shower{
-	pixel_y = 9;
-	pixel_x = 9
-	},
-/obj/structure/decoration/hatch{
-	dir = 1;
-	pixel_y = -12;
-	layer = 3.0;
-	pixel_x = -1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/building)
 "wLc" = (
 /obj/structure/sign/warning/securearea{
 	pixel_x = 32;
@@ -109979,7 +109949,7 @@ oUj
 aRk
 aaQ
 tbf
-aWX
+vng
 cmP
 aaT
 qkl
@@ -110235,7 +110205,7 @@ aaQ
 aHy
 aaQ
 abP
-aWX
+vng
 hpb
 aaT
 aaT
@@ -111120,7 +111090,7 @@ aaa
 (159,1,1) = {"
 aaa
 ral
-wKS
+oQN
 juU
 kXz
 abI
@@ -112292,8 +112262,8 @@ cmh
 aaQ
 aaT
 csf
-aWX
-aWX
+vng
+vng
 uAf
 mhJ
 sdn
@@ -112547,7 +112517,7 @@ aVM
 aaQ
 vkA
 aaQ
-aWX
+vng
 fRF
 xfj
 smT
@@ -112804,7 +112774,7 @@ ltX
 aaQ
 aaQ
 aaQ
-aWX
+vng
 gXC
 pJF
 rHX
@@ -113230,10 +113200,10 @@ scc
 scc
 scc
 scc
-aWX
-aWX
+vng
+vng
 fCh
-aWX
+vng
 ltO
 kfs
 bnE
@@ -114258,7 +114228,7 @@ xjM
 xjM
 xjM
 kad
-aWX
+vng
 arR
 rCy
 jKl
@@ -114515,16 +114485,16 @@ xUZ
 xjM
 xjM
 oEy
-aWX
-aWX
-aWX
-aWX
+vng
+vng
+vng
+vng
 ltO
-aWX
+vng
 kDl
 xyU
 xyU
-aWX
+vng
 wFA
 gGg
 ejj
@@ -116316,13 +116286,13 @@ xjM
 prR
 kRj
 ocT
-aWX
+vng
 faB
 rqI
 aWx
 rqI
 rqI
-aWX
+vng
 iPm
 cjo
 kVp
@@ -126582,7 +126552,7 @@ wSN
 xNI
 wSN
 rcw
-iWb
+uAs
 vVo
 aae
 vVo
