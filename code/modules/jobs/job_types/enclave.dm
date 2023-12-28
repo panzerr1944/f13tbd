@@ -816,7 +816,7 @@
 // Special - 'Borg
 /datum/job/enclave/encborg
 	title = "Enclave Synthetic"
-	flag = F13ENCCYBORG
+	flag = F13ENCBORG
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Lieutenant and Science Officers"

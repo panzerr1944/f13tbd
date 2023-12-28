@@ -215,6 +215,9 @@
 /obj/structure/toilet{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "redrustyfull"
 	},
@@ -361,10 +364,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/enclave/mess)
-"dg" = (
-/obj/effect/landmark/start/f13/encborg,
-/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/enclave/rnd)
 "dh" = (
 /obj/structure/rack,
 /obj/item/circuitboard/machine/chem_heater,
@@ -1698,6 +1697,9 @@
 /obj/machinery/camera/autoname{
 	dir = 8;
 	network = list("Enclave")
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/open/floor/f13,
 /area/f13/enclave/prison)
@@ -3962,6 +3964,7 @@
 /area/f13/enclave/hallways)
 "CW" = (
 /obj/machinery/recharge_station,
+/obj/effect/landmark/start/f13/encborg,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "CX" = (
@@ -4484,6 +4487,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/briefing)
+"Hi" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/enclave/armory)
 "Hr" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -5264,6 +5276,9 @@
 /obj/structure/toilet{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "redrustyfull"
 	},
@@ -5647,6 +5662,9 @@
 	name = "security shutters";
 	pixel_x = -26
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/f13,
 /area/f13/enclave/prison)
 "Qb" = (
@@ -5674,6 +5692,11 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/innerchp)
+"Qo" = (
+/obj/effect/turf_decal/stripes/red/line,
+/obj/effect/landmark/start/f13/uscpl,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave/briefing)
 "Qp" = (
 /obj/structure/sign/departments/examroom,
 /turf/closed/wall/r_wall/f13/vault,
@@ -20040,7 +20063,7 @@ JF
 JF
 qG
 AW
-WR
+Qo
 kl
 kl
 oY
@@ -20554,7 +20577,7 @@ JF
 JF
 JF
 AW
-WR
+Qo
 Ov
 Ov
 oY
@@ -23870,13 +23893,13 @@ FJ
 uY
 qr
 cs
-Ot
+Hi
 nM
 fl
 fl
 fl
 fl
-fl
+sq
 Jj
 JF
 JF
@@ -24139,7 +24162,7 @@ Hs
 CT
 AW
 CW
-dg
+iI
 Cx
 iI
 iI
