@@ -2519,12 +2519,14 @@
 	taste_description = "plant dust"
 	ghoulfriendly = TRUE
 
+/*
 /datum/reagent/pax/catnip
 	name = "Catnip"
 	taste_description = "grass"
 	description = "A colorless liquid that makes people more peaceful and felines more happy."
 	metabolization_rate = 1.75 * REAGENTS_METABOLISM
 	value = REAGENT_VALUE_COMMON
+*/
 
 /datum/reagent/preservahyde
 	name = "Preservahyde"
