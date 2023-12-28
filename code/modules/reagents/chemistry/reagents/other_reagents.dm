@@ -2433,6 +2433,7 @@
 		if(changeling)
 			changeling.chem_charges = max(changeling.chem_charges-2, 0)
 	return ..()
+
 /*
 /datum/reagent/pax/peaceborg
 	name = "synth-pax"
@@ -2474,6 +2475,7 @@
 		to_chat(M, "You should sit down and take a rest...")
 	..()
 */
+
 /datum/reagent/changeling_string
 	name = "UNKNOWN"
 	description = "404: Chemical not found."
@@ -2658,6 +2660,7 @@
 	blood_state = null
 	bloodiness = null
 */
+
 /datum/reagent/determination
 	name = "Determination"
 	description = "For when you need to push on a little more. Do NOT allow near plants."
@@ -2848,6 +2851,7 @@
 /datum/reagent/nutracid/on_mob_life(mob/living/carbon/M)
 	M.adjust_nutrition(-5)
 	..()
+
 /*
 /datum/reagent/breast_enlarger
 	name = "Succubus milk"
