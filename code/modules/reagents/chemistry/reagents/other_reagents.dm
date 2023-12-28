@@ -2390,6 +2390,7 @@
 	description = "blue sparkles that get everywhere"
 	color = "#4040FF" //A blueish color
 	glitter_type = /obj/effect/decal/cleanable/glitter/blue
+
 /*
 /datum/reagent/pax
 	name = "pax"
