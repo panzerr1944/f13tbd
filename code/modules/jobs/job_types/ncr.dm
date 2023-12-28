@@ -163,7 +163,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_requirements = 1440
 
 	loadout_options = list(
-		/datum/outfit/loadout/ncrcptmelee,	// Lucky
+		/datum/outfit/loadout/ncrcptmelee,	// Peacekeeper
 		/datum/outfit/loadout/ncrcptshotgun, // Pancor
 		)
 
@@ -200,13 +200,15 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
 		/obj/item/storage/box/ration/menu_eight = 1,
+		/obj/item/gun/ballistic/automatic/pistol/m1911/custom = 1,
+		/obj/item/ammo_box/magazine/m45 = 2,
 		)
 
 /datum/outfit/loadout/ncrcptmelee
 	name = "Backline Support"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357/lucky = 1,
-		/obj/item/ammo_box/a357box = 2,
+		/obj/item/gun/ballistic/revolver/m29/peacekeeper = 1,
+		/obj/item/ammo_box/m44box = 2,
 		)
 
 /datum/outfit/loadout/ncrcptshotgun
@@ -311,7 +313,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_requirements = 780
 
 	loadout_options = list( // ALL: Bayonet, M1911 sidearm
-		/datum/outfit/loadout/sergeantrifleman,	// R82
+		/datum/outfit/loadout/sergeantrifleman,	// R91
 		/datum/outfit/loadout/sergeantrecon, // sniper
 		/datum/outfit/loadout/sergeantcqc, // Armor plus browning.
 		)
@@ -353,7 +355,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/sergeantrifleman
 	name = "Lead Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
 	head = /obj/item/clothing/head/f13/ncr
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 3,
@@ -701,7 +703,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/reconbandolier
 	head = /obj/item/clothing/head/beret/ncr_recon_ranger
 	neck = /obj/item/clothing/neck/mantle/ranger
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/w308 = 3,
 		/obj/item/gun/ballistic/revolver/revolver45 = 1,
@@ -866,7 +868,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1carbine)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
 	ADD_TRAIT(H, TRAIT_EXPLOSIVE_CRAFTING, REF(src))
 
@@ -1008,9 +1009,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrdocrifle
 	name = "Support Medic"
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm = 2,
+		/obj/item/ammo_box/magazine/m556/rifle/ = 2,
 		/obj/item/seeds/poppy/broc = 2,
 		/obj/item/seeds/xander = 2
 		)
@@ -1320,7 +1321,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
@@ -1344,7 +1344,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses	= /obj/item/clothing/glasses/welding
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	gloves = /obj/item/clothing/gloves/color/yellow
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/m1n
+	suit_store = /obj/item/gun/ballistic/automatic/service
 	gunsmith_one = TRUE
 	gunsmith_two = TRUE
 	gunsmith_three = TRUE
