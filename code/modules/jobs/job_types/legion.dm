@@ -1112,7 +1112,7 @@ Discuss balance and documentation changes with Dragonfruits#1913 or forward them
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/greasegun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg10mm)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/remingtonhuntingrifle)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)

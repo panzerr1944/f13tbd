@@ -845,7 +845,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
 		/datum/outfit/loadout/combatengineerbuilder, // Minelaying, Extra materials
-		/datum/outfit/loadout/combatengineersapper, //  Explosive Crafting
+		/datum/outfit/loadout/combatengineersapper, //  Advanced Explosive Crafting
 		)
 
 	matchmaking_allowed = list(
@@ -868,6 +868,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1carbine)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK,  REF(src))
+	ADD_TRAIT(H, TRAIT_EXPLOSIVE_CRAFTING, REF(src))
 
 /datum/outfit/job/ncr/f13combatengineer
 	name = "NCR Combat Engineer"
@@ -893,7 +894,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
 		/obj/item/grenade/plastic/c4 = 2,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/ammo_box/magazine/msmg10mm = 2,
 		)
@@ -1318,7 +1318,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/rangemaster)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/n99)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/commando)
@@ -1326,6 +1325,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/marksmancarbine)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1garand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingrifle)
 
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/receiver)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/assembly)
