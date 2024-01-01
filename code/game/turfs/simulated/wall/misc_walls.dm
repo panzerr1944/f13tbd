@@ -190,7 +190,7 @@
 
 /turf/closed/wall/rust/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/soap))
-		if(!do_after(user, 5 SECONDS, FALSE, src))
+		if(!do_after(user, 2 SECONDS, FALSE, src))
 			to_chat(user, "<span class='warning'>You must stand still to clean the wall!</span>")
 			return
 		ChangeTurf(/turf/closed/wall)
@@ -207,7 +207,7 @@
 
 /turf/closed/wall/r_wall/rust/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/soap))
-		if(!do_after(user, 5 SECONDS, FALSE, src))
+		if(!do_after(user, 2 SECONDS, FALSE, src))
 			to_chat(user, "<span class='warning'>You must stand still to clean the wall!</span>")
 			return
 		ChangeTurf(/turf/closed/wall/r_wall)
