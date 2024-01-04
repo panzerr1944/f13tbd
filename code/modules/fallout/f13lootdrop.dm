@@ -1860,6 +1860,7 @@
 					/obj/item/seeds/coffee,
 					/obj/item/seeds/corn,
 					/obj/item/seeds/eggplant,
+					/obj/item/seeds/garlic,
 					/obj/item/seeds/grape,
 					/obj/item/seeds/grass,
 					/obj/item/seeds/lemon,

@@ -762,6 +762,7 @@
 	can_bayonet = TRUE
 	fire_sound = 'sound/weapons/Gunshot_large_silenced.ogg'
 	slowdown = 0.15
+	extra_damage = -2		//18 damage, 0.4 pen. Still pretty damn good, player-killer service rifle.
 
 //Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 20dmg/0.50AP
 /obj/item/gun/ballistic/automatic/assault_carbine
@@ -852,11 +853,11 @@
 	mag_type = /obj/item/ammo_box/magazine/m473
 	burst_size = 3
 	fire_delay = 4
-	is_automatic = TRUE
 	automatic = 0
-	burst_shot_delay = 1.5
+	burst_shot_delay = 2
 	spread = 5
 	recoil = 0.1
+	automatic_burst_overlay = TRUE
 	can_attachments = TRUE
 	semi_auto = TRUE
 	can_scope = FALSE
