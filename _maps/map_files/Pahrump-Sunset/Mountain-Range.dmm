@@ -150,6 +150,17 @@
 /obj/item/bedsheet/enclave,
 /turf/open/floor/carpet/black,
 /area/f13/enclave/command)
+"aM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/girder/reinforced,
+/obj/structure/lattice{
+	layer = 3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/enclave)
 "aS" = (
 /obj/item/soap/deluxe,
 /obj/machinery/shower{
@@ -248,7 +259,7 @@
 "bD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/pizza/margherita,
+/obj/item/reagent_containers/food/snacks/pizza/sassysage,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
 "bE" = (
@@ -1010,7 +1021,8 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Sergeant's Quarters";
-	req_one_access_txt = "134"
+	req_one_access_txt = "134";
+	id_tag = "sgtoffices"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
@@ -1048,6 +1060,12 @@
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#c1caff"
+	},
+/obj/machinery/button/door{
+	id = "sstaffofficen";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
@@ -1196,7 +1214,10 @@
 "hb" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/decoration/fire,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "hc" = (
 /obj/effect/turf_decal/stripes/red/line{
@@ -1213,7 +1234,8 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Lieutenant's Office";
-	req_one_access_txt = "134"
+	req_one_access_txt = "134";
+	id_tag = "ltoffice"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/enclave)
@@ -1354,7 +1376,8 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Support Staff's Quarters";
-	req_one_access_txt = "134"
+	req_one_access_txt = "134";
+	id_tag = "sstaffofficen"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
@@ -1394,6 +1417,15 @@
 	name = "WARNING: NO MANS LAND AHEAD PVP ZONE"
 	},
 /turf/closed/wall/r_wall/rust,
+/area/f13/enclave)
+"ia" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "ib" = (
 /turf/closed/wall/r_wall,
@@ -1589,11 +1621,17 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "iV" = (
 /obj/structure/sign/poster/official/safety_report,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "iW" = (
 /obj/structure/filingcabinet,
@@ -1858,16 +1896,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave)
 "kp" = (
-/obj/effect/turf_decal/bot_white,
-/obj/structure/closet/locker,
-/obj/item/storage/box/handcuffs,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/storage/box/flashbangs,
 /obj/machinery/light/small{
 	light_color = "#F5CDA6";
 	bulb_colour = "#F5CDA6"
 	},
+/obj/structure/closet/locker,
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "ks" = (
@@ -1875,7 +1909,8 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Gunnery Sergeant's Quarters";
-	req_one_access_txt = "134"
+	req_one_access_txt = "134";
+	id_tag = "gysgtquarters"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
@@ -2084,8 +2119,9 @@
 /area/f13/caves)
 "lu" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Medical Bay";
-	req_one_access_txt = "134"
+	name = "Bathroom";
+	req_one_access_txt = "134";
+	id_tag = "enct4"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave)
@@ -2123,6 +2159,12 @@
 /obj/machinery/light{
 	dir = 1;
 	layer = 2.9
+	},
+/obj/machinery/button/door{
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4;
+	id = "sgtofficen"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
@@ -2261,6 +2303,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/innerchp)
+"mw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/lattice/catwalk,
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/plasteel/f13/vault_floor/green,
+/area/f13/enclave/hydroponics)
 "mx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark,
@@ -2327,6 +2375,14 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/mountain_area)
+"mW" = (
+/obj/machinery/door/airlock/hatch{
+	req_access = null;
+	req_access_txt = "134";
+	id_tag = "encroom2"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/enclave)
 "na" = (
 /obj/structure/target_stake{
 	anchored = 1
@@ -2408,7 +2464,8 @@
 	},
 /obj/machinery/door/airlock/hatch{
 	req_access = null;
-	req_access_txt = "134"
+	req_access_txt = "134";
+	id_tag = "encvirology"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/virology)
@@ -2815,7 +2872,8 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Lieutenant's Quarters";
-	req_one_access_txt = "256"
+	req_one_access_txt = "256";
+	id_tag = "ltquarters"
 	},
 /turf/open/floor/carpet/royalblue,
 /area/f13/enclave/command)
@@ -2940,6 +2998,9 @@
 "qt" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Robotics"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
@@ -3082,6 +3143,12 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
+/obj/machinery/button/door{
+	id = "sstaffoffices";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
 "rj" = (
@@ -3180,9 +3247,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "rB" = (
-/obj/structure/sign/poster/contraband/revolver{
-	pixel_x = 32
-	},
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#F5CDA6";
@@ -3217,6 +3281,12 @@
 /obj/machinery/light/small{
 	light_color = "#6C8DA6";
 	bulb_colour = "#6C8DA6"
+	},
+/obj/machinery/button/door{
+	id = "enct1";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
@@ -3485,11 +3555,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/enclave/command)
 "tD" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/closed/wall/r_wall,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet/personal,
+/obj/effect/turf_decal/box,
+/turf/open/floor/plating/tunnel,
 /area/f13/enclave)
 "tF" = (
 /obj/structure/chair/right{
@@ -3564,6 +3633,10 @@
 /obj/item/clothing/under/rank/prisoner,
 /obj/item/restraints/legcuffs,
 /obj/item/clothing/suit/straight_jacket,
+/obj/item/electropack/shockcollar{
+	name = "Prisoner Control Device"
+	},
+/obj/item/key/collar,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "uf" = (
@@ -3614,19 +3687,24 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "uu" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/girder/reinforced,
-/obj/structure/lattice{
-	layer = 3
+/obj/machinery/door/airlock/hatch{
+	name = "Bathroom";
+	req_one_access_txt = "134";
+	id_tag = "enct3"
 	},
-/turf/open/floor/plating/tunnel{
-	icon_state = "tunnelrusty"
-	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "uv" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/briefing)
+"ux" = (
+/obj/structure/sign/poster/contraband/random,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
+/area/f13/enclave)
 "uA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/camera/autoname{
@@ -3786,6 +3864,12 @@
 	dir = 8;
 	network = list("Enclave")
 	},
+/obj/machinery/button/door{
+	id = "encvirology";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/enclave/virology)
 "vv" = (
@@ -3814,6 +3898,10 @@
 	desc = "Strictly for filling up mop buckets.";
 	name = "Mop Sink";
 	pixel_y = 25
+	},
+/obj/machinery/light/floor{
+	light_color = "#F5CDA6";
+	bulb_colour = "#F5CDA6"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave/hydroponics)
@@ -4038,6 +4126,9 @@
 /obj/structure/sign/poster/official/report_crimes{
 	pixel_y = 32
 	},
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/enclave/hallways)
 "wT" = (
@@ -4115,6 +4206,7 @@
 /obj/structure/sign/poster/contraband/space_cola{
 	pixel_x = 32
 	},
+/obj/item/reagent_containers/food/snacks/grilledcheese,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/enclave/mess)
 "xi" = (
@@ -4126,6 +4218,13 @@
 /area/f13/mountain_area)
 "xk" = (
 /obj/machinery/mech_bay_recharge_port,
+/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
+/area/f13/enclave/rnd)
+"xm" = (
+/obj/structure/table,
+/obj/machinery/cell_charger{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
 "xq" = (
@@ -4144,9 +4243,27 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/enclave/armory)
+"xr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder/reinforced,
+/obj/structure/lattice{
+	layer = 3
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/enclave)
 "xs" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	id = "enct4";
+	normaldoorcontrol = 1;
+	pixel_x = -28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "xt" = (
@@ -4207,8 +4324,22 @@
 "xI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
+/obj/machinery/button/door{
+	id = "gysgtquarters";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/carpet/black,
 /area/f13/enclave/command)
+"xL" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Bathroom";
+	req_one_access_txt = "134";
+	id_tag = "enct2"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/enclave)
 "xP" = (
 /obj/machinery/light{
 	dir = 8;
@@ -4250,7 +4381,10 @@
 /area/f13/enclave/vertibird)
 "yj" = (
 /obj/structure/sign/poster/sunset/corporate/eyes,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "ym" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -4325,6 +4459,15 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"yC" = (
+/obj/machinery/door/airlock/hatch{
+	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
+	name = "Sergeant's Quarters";
+	req_one_access_txt = "134";
+	id_tag = "sgtofficen"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave/command)
 "yD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -4340,7 +4483,7 @@
 /area/f13/enclave/hydroponics)
 "yG" = (
 /obj/structure/sign/poster/sunset/nukagirl,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "yJ" = (
 /obj/structure/cable{
@@ -4376,6 +4519,20 @@
 /obj/item/seeds/wheat,
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
+"yU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_y = -32
+	},
+/obj/machinery/button/door{
+	id = "encroom3";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet/black,
+/area/f13/enclave)
 "yV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
@@ -4607,6 +4764,12 @@
 	light_color = "#6C8DA6";
 	bulb_colour = "#6C8DA6"
 	},
+/obj/machinery/button/door{
+	id = "enct3";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "At" = (
@@ -4827,6 +4990,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/briefing)
+"BG" = (
+/obj/machinery/door/airlock/hatch{
+	req_access = null;
+	req_access_txt = "134";
+	id_tag = "encroom3"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/enclave)
 "BJ" = (
 /obj/structure/table,
 /obj/machinery/light{
@@ -4879,6 +5050,14 @@
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave/hydroponics)
+"BZ" = (
+/obj/machinery/door/airlock/hatch{
+	req_access = null;
+	req_access_txt = "134";
+	id_tag = "encroom1"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/enclave)
 "Ca" = (
 /obj/structure/chair,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -5116,6 +5295,7 @@
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/food/snacks/meatballspaghetti,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
 "Dw" = (
@@ -5347,6 +5527,12 @@
 /obj/machinery/vending/medical,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/enclave/medbay)
+"EM" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple,
+/area/f13/enclave/rnd)
 "EN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
@@ -5397,6 +5583,9 @@
 /obj/structure/sign/warning/nosmoking/circle{
 	pixel_x = 16;
 	pixel_y = 35
+	},
+/obj/machinery/cell_charger{
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/enclave/rnd)
@@ -5748,31 +5937,11 @@
 /turf/closed/indestructible/riveted,
 /area/f13/tcoms)
 "GX" = (
-/obj/effect/turf_decal/bot_white,
-/obj/structure/closet/locker,
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_x = 32;
-	pixel_y = -17
-	},
-/obj/item/electropack/shockcollar{
-	name = "Prisoner Control Device"
-	},
-/obj/item/electropack/shockcollar{
-	name = "Prisoner Control Device"
-	},
-/obj/item/electropack/shockcollar{
-	name = "Prisoner Control Device"
-	},
-/obj/item/electropack/shockcollar{
-	name = "Prisoner Control Device"
-	},
-/obj/item/key/collar,
-/obj/item/key/collar,
-/obj/item/key/collar,
-/obj/item/key/collar,
 /obj/effect/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
 	},
+/obj/structure/closet/locker,
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "GZ" = (
@@ -5822,6 +5991,10 @@
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/camera/autoname{
+	network = list("Enclave");
+	dir = 1
+	},
 /turf/open/floor/padded,
 /area/f13/enclave/prison)
 "Hw" = (
@@ -6282,6 +6455,10 @@
 	pixel_x = -2;
 	pixel_y = 15
 	},
+/obj/item/reagent_containers/food/snacks/nugget,
+/obj/item/reagent_containers/food/snacks/nugget,
+/obj/item/reagent_containers/food/snacks/nugget,
+/obj/item/reagent_containers/food/snacks/nugget,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/enclave/mess)
 "JG" = (
@@ -6324,6 +6501,13 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
+"JV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/poster/contraband/revolver{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave/armory)
 "JY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/mattress/pregame,
@@ -6388,6 +6572,12 @@
 /obj/structure/curtain{
 	color = "#845f58";
 	pixel_y = -32
+	},
+/obj/machinery/button/door{
+	id = "encroom2";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
 	},
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
@@ -6471,7 +6661,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/sign/poster/contraband/random,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "KZ" = (
 /obj/machinery/door/airlock/hatch{
@@ -6530,12 +6720,12 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "Ls" = (
-/obj/machinery/workbench/advanced,
 /obj/item/stack/sheet/glass/ten,
 /obj/item/stack/sheet/glass/ten,
 /obj/item/stack/sheet/metal/twenty,
 /obj/item/stack/sheet/metal/twenty,
 /obj/item/stack/sheet/plasteel/five,
+/obj/machinery/workbench,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/enclave/rnd)
 "Lt" = (
@@ -6589,6 +6779,9 @@
 "LS" = (
 /obj/structure/sign/poster/official/safety_report{
 	pixel_y = 32
+	},
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
 	},
 /turf/open/floor/padded,
 /area/f13/enclave/prison)
@@ -6644,6 +6837,12 @@
 	},
 /turf/closed/wall/r_wall,
 /area/f13/enclave/prison)
+"Mn" = (
+/obj/machinery/camera/autoname{
+	network = list("Enclave")
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/enclave/prison)
 "Mp" = (
 /obj/machinery/vending/autodrobe,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6693,6 +6892,15 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
+"MK" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
+/area/f13/enclave)
 "MN" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
@@ -6735,6 +6943,12 @@
 /area/f13/enclave/hallways)
 "MV" = (
 /obj/effect/decal/cleanable/generic,
+/mob/living/simple_animal/pet/cat/kitten{
+	name = "encat";
+	health = 50;
+	faction = list("neutral", "hostile", "wastebot", "enclave", "BOS", "deathclaw", "supermutant");
+	maxHealth = 50
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
 "Nc" = (
@@ -6747,6 +6961,7 @@
 "Ne" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/food/snacks/meatballsub,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave/mess)
 "Nf" = (
@@ -6815,7 +7030,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/enclave/hydroponics)
 "Nu" = (
-/obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
@@ -7154,6 +7368,12 @@
 	light_color = "#6C8DA6";
 	bulb_colour = "#6C8DA6"
 	},
+/obj/machinery/button/door{
+	id = "enct2";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "Pk" = (
@@ -7228,6 +7448,8 @@
 /obj/item/lock_construct,
 /obj/item/key,
 /obj/item/key,
+/obj/item/storage/box/flashbangs,
+/obj/item/storage/box/handcuffs,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "PM" = (
@@ -7304,7 +7526,10 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
 /area/f13/enclave)
 "Qq" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7329,6 +7554,12 @@
 "Qy" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/security/enclave,
+/obj/machinery/button/door{
+	id = "ltoffice";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/enclave/command)
 "Qz" = (
@@ -7440,6 +7671,20 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave)
+"Rh" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 6;
+	light_color = "#c1caff"
+	},
+/obj/machinery/button/door{
+	id = "sgtoffices";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave/command)
 "Rj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/stripes/line{
@@ -7475,6 +7720,12 @@
 	color = "#845f58";
 	pixel_y = 32
 	},
+/obj/machinery/button/door{
+	id = "encroom1";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
 "Rt" = (
@@ -7495,13 +7746,12 @@
 /turf/closed/wall/r_wall,
 /area/f13/enclave)
 "RE" = (
-/obj/effect/turf_decal/stripes/white/line,
-/obj/machinery/camera/autoname{
-	dir = 5;
-	network = list("Enclave")
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
 	},
-/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/enclave/prison)
+/area/f13/enclave)
 "RF" = (
 /obj/machinery/light{
 	dir = 1
@@ -7561,6 +7811,10 @@
 	id = "enc_brig_shutters";
 	name = "security shutters";
 	pixel_x = -26
+	},
+/obj/machinery/camera/autoname{
+	dir = 5;
+	network = list("Enclave")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/enclave/prison)
@@ -7978,10 +8232,25 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/r_wall/rust,
+/turf/closed/indestructible/f13vaultrusted{
+	name = "reinforced wall";
+	icon = 'icons/turf/walls/reinforced_wall.dmi'
+	},
+/area/f13/enclave)
+"Ul" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Bathroom";
+	req_one_access_txt = "134";
+	id_tag = "enct1"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/enclave)
 "Um" = (
 /obj/effect/turf_decal/stripes/white/line,
+/obj/machinery/door/airlock/security{
+	name = "Brig";
+	req_access_txt = "134"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "Us" = (
@@ -8204,6 +8473,15 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave/briefing)
+"VF" = (
+/obj/machinery/door/airlock/hatch{
+	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
+	name = "Support Staff's Quarters";
+	req_one_access_txt = "134";
+	id_tag = "sstaffoffices"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/enclave/command)
 "VG" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -8297,6 +8575,10 @@
 	light_color = "#F5CDA6";
 	bulb_colour = "#F5CDA6"
 	},
+/obj/item/electropack/shockcollar{
+	name = "Prisoner Control Device"
+	},
+/obj/item/key/collar,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave/prison)
 "We" = (
@@ -8320,6 +8602,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave/briefing)
+"Ws" = (
+/obj/structure/girder/reinforced,
+/obj/structure/lattice{
+	layer = 3
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/enclave)
 "Wt" = (
 /obj/structure/reagent_dispensers/rainwater_tank,
 /obj/effect/turf_decal/weather/snow/corner{
@@ -8458,6 +8749,16 @@
 	},
 /turf/closed/wall/r_wall,
 /area/f13/enclave)
+"Xd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	id = "ltquarters";
+	normaldoorcontrol = 1;
+	pixel_x = 28;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet/royalblue,
+/area/f13/enclave/command)
 "Xe" = (
 /obj/structure/fireplace,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8576,6 +8877,9 @@
 /obj/machinery/camera/autoname{
 	dir = 5;
 	network = list("Enclave")
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/enclave/rnd)
@@ -11135,7 +11439,7 @@ HA
 UE
 HA
 HA
-jv
+HA
 HA
 HA
 HA
@@ -12435,12 +12739,12 @@ ib
 bj
 bj
 bj
+ib
 ZO
 ZO
 ZO
 ZO
-ZO
-ZO
+ib
 iT
 HA
 HA
@@ -12713,7 +13017,7 @@ HA
 HA
 HA
 HA
-jv
+HA
 HA
 HA
 HA
@@ -13202,16 +13506,16 @@ Rz
 ib
 Hw
 gy
-Om
+BZ
 wv
 YH
 wv
-Om
+mW
 VZ
 Hw
 Rz
 ib
-ZO
+ib
 iT
 HA
 HA
@@ -13982,7 +14286,7 @@ ib
 ib
 ib
 ZO
-ZO
+ib
 iT
 HA
 HA
@@ -14748,7 +15052,7 @@ Om
 YH
 YH
 wv
-Om
+BG
 zI
 FI
 Rz
@@ -15262,12 +15566,12 @@ ib
 vJ
 wv
 kY
-ib
+ZO
 jT
-yr
+yU
 cb
 WK
-ZO
+ib
 iT
 iT
 iT
@@ -15500,7 +15804,7 @@ ib
 ib
 wy
 ZO
-ZO
+mA
 ZO
 ib
 ib
@@ -15510,7 +15814,7 @@ ib
 qU
 ib
 ZO
-ZO
+ib
 ZO
 ib
 ib
@@ -15519,23 +15823,23 @@ ZO
 fC
 kY
 Ct
+ZO
 ib
 ib
 ib
 ib
+ib
+ib
+ib
 ZO
 ZO
+ib
+ib
+ZO
+ib
 ZO
 ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
+ib
 iT
 HA
 HA
@@ -15776,13 +16080,13 @@ ZO
 QF
 wv
 Uu
-ib
+ZO
 bp
 FG
 xP
 Lg
 yG
-ZO
+ib
 yi
 ZU
 pv
@@ -16023,7 +16327,7 @@ ib
 VB
 VB
 JU
-YF
+Rh
 ZO
 wm
 gF
@@ -16038,8 +16342,8 @@ Ca
 RH
 rj
 gC
-uu
-ZO
+ib
+ib
 Wh
 wA
 ZU
@@ -16290,13 +16594,13 @@ hP
 YH
 wv
 YH
-hP
+VF
 bp
 yV
 VB
 eh
-rm
-ZO
+ib
+ib
 DV
 Vs
 jR
@@ -16552,8 +16856,8 @@ IE
 VB
 ri
 nl
-uu
-ZO
+ib
+ib
 VG
 uL
 ZU
@@ -16777,7 +17081,7 @@ HA
 HA
 HA
 iT
-ZO
+mA
 ib
 ZO
 ZO
@@ -16788,7 +17092,7 @@ sH
 ZO
 ZO
 ZO
-gc
+yC
 ib
 ib
 ib
@@ -16805,12 +17109,12 @@ iB
 YH
 wv
 ib
-ib
-ib
-ib
-ib
 ZO
 ZO
+ZO
+ib
+ib
+ib
 Iy
 uL
 uL
@@ -17066,7 +17370,7 @@ cd
 wE
 WG
 pz
-ZO
+ib
 ib
 cD
 ZO
@@ -17077,7 +17381,7 @@ ZO
 ZO
 ZO
 ZO
-ZO
+ib
 iT
 HA
 HA
@@ -17318,7 +17622,7 @@ YH
 YH
 YH
 YH
-wj
+ze
 ON
 ON
 sm
@@ -17575,7 +17879,7 @@ wv
 wv
 wv
 YH
-ib
+ZO
 sm
 VE
 yO
@@ -17832,7 +18136,7 @@ Cx
 Qx
 YH
 wv
-ib
+ZO
 sm
 gM
 Vg
@@ -17849,7 +18153,7 @@ IY
 ZO
 ze
 ZO
-ZO
+ib
 iT
 HA
 HA
@@ -18830,7 +19134,7 @@ UE
 UE
 UE
 iT
-ZO
+mA
 ZO
 ib
 ib
@@ -19359,7 +19663,7 @@ wv
 ib
 Gj
 Gj
-dz
+Ul
 rP
 fs
 fO
@@ -19367,9 +19671,9 @@ fO
 fO
 mA
 BU
-Ny
-tH
-ab
+Xi
+mw
+mw
 tH
 Em
 YH
@@ -19627,8 +19931,8 @@ Dg
 Ny
 vK
 of
-vK
-Rz
+Ny
+aM
 wv
 YH
 wI
@@ -19873,19 +20177,19 @@ YH
 ib
 qA
 Jx
-dz
+xL
 Pj
 wj
-Ew
-Ew
-Ew
+tD
+tD
+tD
 ib
 Og
 DL
+mw
+mw
 ab
-ab
-ab
-hd
+xr
 YH
 nG
 Pa
@@ -20141,8 +20445,8 @@ yE
 Ny
 SF
 SF
-SF
-ib
+DL
+IY
 YH
 wv
 oY
@@ -20387,7 +20691,7 @@ YH
 ib
 Jx
 Gj
-dz
+uu
 Ap
 ze
 Ew
@@ -20398,7 +20702,7 @@ uo
 Ny
 Ww
 Ww
-Ww
+ab
 hd
 wv
 YH
@@ -20653,13 +20957,13 @@ hX
 ZO
 ZO
 vH
-Xi
+Ny
 Ny
 tw
 ib
 dV
 wv
-yv
+EM
 vZ
 yv
 yv
@@ -20916,7 +21220,7 @@ Ys
 ib
 YH
 YH
-yv
+EM
 yv
 vZ
 sy
@@ -21190,7 +21494,7 @@ jh
 lH
 HD
 Vf
-ZO
+mA
 iT
 HA
 HA
@@ -21446,8 +21750,8 @@ IY
 IY
 ZO
 ZO
-ZO
-ZO
+mA
+mA
 iT
 HA
 HA
@@ -21665,14 +21969,14 @@ We
 ZO
 wI
 wI
+mA
+mA
 ZO
 ZO
-ib
-ib
-ib
-ib
-ib
-ib
+ZO
+ZO
+ZO
+ZO
 Dp
 ib
 cD
@@ -21913,16 +22217,16 @@ iT
 ZO
 ln
 ib
+mA
 ZO
 ZO
 ZO
 ZO
 ZO
-ZO
-ZO
-ZO
-ZO
-ZO
+mA
+mA
+mA
+mA
 kz
 bL
 xF
@@ -22176,7 +22480,7 @@ XH
 FM
 Il
 EJ
-ZO
+mA
 bB
 oO
 cg
@@ -23491,7 +23795,7 @@ vZ
 nK
 cR
 uK
-gV
+MK
 ib
 ib
 ib
@@ -23738,8 +24042,8 @@ YH
 cu
 ib
 wj
-ZO
-ZO
+mA
+mA
 ZO
 YH
 wv
@@ -23986,11 +24290,11 @@ mR
 YH
 YH
 YH
-mR
-ib
-ib
-ib
-Rz
+tu
+ZO
+ZO
+ZO
+wI
 ib
 ib
 kH
@@ -24243,7 +24547,7 @@ HZ
 YH
 YH
 TE
-ib
+ZO
 UT
 Ne
 jz
@@ -24514,7 +24818,7 @@ JZ
 tB
 tB
 tB
-tD
+Cx
 oq
 OF
 WO
@@ -25253,7 +25557,7 @@ iT
 ib
 qX
 rH
-rH
+Xd
 pS
 Tm
 nV
@@ -25281,7 +25585,7 @@ pV
 mR
 mR
 Ro
-sW
+gV
 YH
 wv
 wv
@@ -25295,7 +25599,7 @@ fZ
 tz
 lY
 qI
-ZO
+mA
 iT
 HA
 HA
@@ -25538,7 +25842,7 @@ Ro
 lh
 uY
 ej
-sW
+gV
 YH
 YH
 wv
@@ -25547,12 +25851,12 @@ iI
 vE
 iI
 sa
+mA
 ZO
 ZO
 ZO
-ZO
-ZO
-ZO
+mA
+mA
 iT
 HA
 HA
@@ -25786,7 +26090,7 @@ wv
 YH
 YH
 ee
-tu
+mR
 sq
 xh
 EC
@@ -25795,7 +26099,7 @@ et
 EI
 DP
 CS
-sW
+gV
 YH
 YH
 YH
@@ -25804,7 +26108,7 @@ ry
 nm
 RG
 xk
-ZO
+mA
 iT
 iT
 iT
@@ -26031,7 +26335,7 @@ ZO
 Ms
 oL
 oL
-XN
+ia
 WJ
 WJ
 Cx
@@ -26044,12 +26348,12 @@ wB
 WJ
 WJ
 KY
-WJ
+Cx
 gm
 Cx
-Cx
-Cx
-Cx
+WJ
+WJ
+WJ
 Cx
 Cx
 fw
@@ -26061,7 +26365,7 @@ Fe
 nm
 RG
 sb
-wj
+ze
 iT
 HA
 HA
@@ -26288,7 +26592,7 @@ ib
 wU
 oL
 wU
-ZO
+mA
 Nn
 Bg
 FJ
@@ -26308,17 +26612,17 @@ WR
 mH
 ib
 gw
-ZO
+mA
 ee
 YH
 YH
 gI
 ZO
-Ud
+xm
 nm
 lW
 lW
-ib
+ZO
 iT
 HA
 HA
@@ -26565,7 +26869,7 @@ GZ
 Hs
 ZO
 YB
-ZO
+mA
 tV
 hA
 gI
@@ -26797,7 +27101,7 @@ HA
 HA
 UE
 iT
-ZO
+mA
 ZO
 FC
 zG
@@ -26832,7 +27136,7 @@ ZO
 ZO
 wi
 wi
-ZO
+mA
 iT
 HA
 HA
@@ -27054,7 +27358,7 @@ HA
 HA
 dC
 iT
-ZO
+mA
 Zj
 lg
 qv
@@ -27311,7 +27615,7 @@ HA
 HA
 dC
 iT
-ZO
+mA
 qs
 VS
 wU
@@ -27326,7 +27630,7 @@ wU
 ib
 lX
 WL
-RE
+ib
 lX
 lX
 lX
@@ -27338,7 +27642,7 @@ ZO
 uR
 cB
 Kq
-ZO
+mA
 rf
 hp
 hR
@@ -27568,7 +27872,7 @@ HA
 HA
 dC
 iT
-ZO
+mA
 XB
 DI
 wU
@@ -27595,7 +27899,7 @@ HI
 qG
 Tx
 jd
-ZO
+mA
 Sp
 hp
 hp
@@ -27825,8 +28129,8 @@ HA
 HA
 dC
 iT
-ZO
-ZO
+mA
+mA
 Tc
 sv
 wU
@@ -27838,9 +28142,9 @@ wU
 wU
 oR
 Tk
+Mn
 lX
-lX
-Um
+ib
 lX
 lX
 WL
@@ -27852,13 +28156,13 @@ ZO
 hU
 DT
 bo
-ZO
+mA
 tP
 Se
 hp
 OW
 Pu
-ZO
+mA
 iT
 HA
 HA
@@ -28082,7 +28386,7 @@ HA
 HA
 dC
 iT
-ZO
+mA
 iV
 FN
 wU
@@ -28108,14 +28412,14 @@ ue
 ZO
 cL
 IY
-wy
-ZO
+ux
+mA
 ZO
 lz
 ZO
-ZO
-ZO
-ZO
+mA
+mA
+mA
 iT
 HA
 HA
@@ -28339,8 +28643,8 @@ HA
 HA
 dC
 iT
-ZO
-ZO
+mA
+mA
 YM
 HJ
 bY
@@ -28350,22 +28654,22 @@ PD
 Hx
 sF
 rB
-oL
+JV
+ZO
+ZO
+ZO
+mA
+mA
 ZO
 ZO
 ZO
 ZO
 ZO
 ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-cL
-ZO
+mA
+mA
+RE
+mA
 ZO
 UF
 HR
@@ -28596,20 +28900,20 @@ HA
 HA
 dC
 iT
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
 rm
-rm
+Ws
 ZO
-ZO
-ZO
-ZO
+mA
+mA
 iT
 iT
 iT
@@ -28853,20 +29157,20 @@ HA
 HA
 dC
 iT
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
-ZO
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
+mA
 iT
 HA
 HA
@@ -33737,7 +34041,7 @@ HA
 HA
 HA
 HA
-jv
+HA
 HA
 HA
 HA
