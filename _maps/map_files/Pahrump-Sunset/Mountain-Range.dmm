@@ -1214,10 +1214,7 @@
 "hb" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/decoration/fire,
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "hc" = (
 /obj/effect/turf_decal/stripes/red/line{
@@ -1422,10 +1419,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "ib" = (
 /turf/closed/wall/r_wall,
@@ -1621,17 +1615,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "iV" = (
 /obj/structure/sign/poster/official/safety_report,
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "iW" = (
 /obj/structure/filingcabinet,
@@ -3379,13 +3367,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/armory)
-"sx" = (
-/turf/closed/indestructible/opshuttle{
-	icon = 'icons/turf/walls/reinforced_wall.dmi';
-	icon_state = "r_wall";
-	smooth = 1
-	},
-/area/f13/enclave)
 "sy" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
@@ -3698,13 +3679,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/briefing)
-"ux" = (
-/obj/structure/sign/poster/contraband/random,
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
-/area/f13/enclave)
 "uA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/camera/autoname{
@@ -3981,14 +3955,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/enclave/rnd)
-"wa" = (
-/obj/structure/sign/poster/prewar/poster61,
-/turf/closed/indestructible/opshuttle{
-	icon = 'icons/turf/walls/reinforced_wall.dmi';
-	icon_state = "r_wall";
-	smooth = 1
-	},
-/area/f13/enclave)
 "wf" = (
 /obj/machinery/light{
 	dir = 4;
@@ -4381,10 +4347,7 @@
 /area/f13/enclave/vertibird)
 "yj" = (
 /obj/structure/sign/poster/sunset/corporate/eyes,
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "ym" = (
 /obj/effect/overlay/junk/oldpipes{
@@ -6892,15 +6855,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
-"MK" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
-/area/f13/enclave)
 "MN" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
@@ -7170,7 +7124,7 @@
 	req_access = null;
 	req_access_txt = "134"
 	},
-/turf/open/floor/carpet/black,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/enclave)
 "Oo" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -7526,10 +7480,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "Qq" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7744,13 +7695,6 @@
 "Rz" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/r_wall,
-/area/f13/enclave)
-"RE" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
 /area/f13/enclave)
 "RF" = (
 /obj/machinery/light{
@@ -8232,10 +8176,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/indestructible/f13vaultrusted{
-	name = "reinforced wall";
-	icon = 'icons/turf/walls/reinforced_wall.dmi'
-	},
+/turf/closed/wall/r_wall,
 /area/f13/enclave)
 "Ul" = (
 /obj/machinery/door/airlock/hatch{
@@ -15804,7 +15745,7 @@ ib
 ib
 wy
 ZO
-mA
+ib
 ZO
 ib
 ib
@@ -16824,7 +16765,7 @@ HA
 HA
 HA
 iT
-wy
+VV
 aK
 nD
 xI
@@ -17081,7 +17022,7 @@ HA
 HA
 HA
 iT
-mA
+ib
 ib
 ZO
 ZO
@@ -19134,7 +19075,7 @@ UE
 UE
 UE
 iT
-mA
+ib
 ZO
 ib
 ib
@@ -19920,8 +19861,8 @@ TE
 ib
 qA
 QY
-mA
-mA
+ib
+ib
 mA
 mA
 sh
@@ -20434,8 +20375,8 @@ YH
 ib
 Ni
 rb
-ZO
-ZO
+ib
+ib
 ZO
 zL
 cW
@@ -20950,7 +20891,7 @@ dz
 Dz
 ib
 ib
-ZO
+ib
 lk
 zr
 hX
@@ -21189,7 +21130,7 @@ UE
 UE
 iT
 iT
-sx
+ib
 zV
 Qs
 gp
@@ -21445,8 +21386,8 @@ UE
 UE
 HA
 iT
-sx
-sx
+ib
+ib
 ts
 NX
 Gp
@@ -21494,7 +21435,7 @@ jh
 lH
 HD
 Vf
-mA
+ib
 iT
 HA
 HA
@@ -21702,8 +21643,8 @@ UE
 HA
 HA
 iT
-sx
-wa
+ib
+qU
 MV
 Us
 iA
@@ -21750,8 +21691,8 @@ IY
 IY
 ZO
 ZO
-mA
-mA
+ib
+ib
 iT
 HA
 HA
@@ -21959,7 +21900,7 @@ UE
 iT
 iT
 iT
-sx
+ib
 ZO
 tY
 bw
@@ -21969,8 +21910,8 @@ We
 ZO
 wI
 wI
-mA
-mA
+ib
+ib
 ZO
 ZO
 ZO
@@ -22214,19 +22155,19 @@ UE
 UE
 HA
 iT
-ZO
+ib
 ln
 ib
-mA
+ib
 ZO
 ZO
 ZO
 ZO
 ZO
-mA
-mA
-mA
-mA
+ib
+ib
+ib
+ib
 kz
 bL
 xF
@@ -22480,7 +22421,7 @@ XH
 FM
 Il
 EJ
-mA
+ib
 bB
 oO
 cg
@@ -23795,7 +23736,7 @@ vZ
 nK
 cR
 uK
-MK
+sW
 ib
 ib
 ib
@@ -24042,8 +23983,8 @@ YH
 cu
 ib
 wj
-mA
-mA
+ib
+ib
 ZO
 YH
 wv
@@ -25599,7 +25540,7 @@ fZ
 tz
 lY
 qI
-mA
+ib
 iT
 HA
 HA
@@ -25851,12 +25792,12 @@ iI
 vE
 iI
 sa
-mA
+ib
 ZO
 ZO
 ZO
-mA
-mA
+ib
+ib
 iT
 HA
 HA
@@ -26108,7 +26049,7 @@ ry
 nm
 RG
 xk
-mA
+ib
 iT
 iT
 iT
@@ -26592,7 +26533,7 @@ ib
 wU
 oL
 wU
-mA
+ib
 Nn
 Bg
 FJ
@@ -26612,7 +26553,7 @@ WR
 mH
 ib
 gw
-mA
+ib
 ee
 YH
 YH
@@ -26869,7 +26810,7 @@ GZ
 Hs
 ZO
 YB
-mA
+ib
 tV
 hA
 gI
@@ -27101,7 +27042,7 @@ HA
 HA
 UE
 iT
-mA
+ib
 ZO
 FC
 zG
@@ -27136,7 +27077,7 @@ ZO
 ZO
 wi
 wi
-mA
+ib
 iT
 HA
 HA
@@ -27358,7 +27299,7 @@ HA
 HA
 dC
 iT
-mA
+ib
 Zj
 lg
 qv
@@ -27615,7 +27556,7 @@ HA
 HA
 dC
 iT
-mA
+ib
 qs
 VS
 wU
@@ -27642,7 +27583,7 @@ ZO
 uR
 cB
 Kq
-mA
+ib
 rf
 hp
 hR
@@ -27872,7 +27813,7 @@ HA
 HA
 dC
 iT
-mA
+ib
 XB
 DI
 wU
@@ -27899,7 +27840,7 @@ HI
 qG
 Tx
 jd
-mA
+ib
 Sp
 hp
 hp
@@ -28129,8 +28070,8 @@ HA
 HA
 dC
 iT
-mA
-mA
+ib
+ib
 Tc
 sv
 wU
@@ -28156,13 +28097,13 @@ ZO
 hU
 DT
 bo
-mA
+ib
 tP
 Se
 hp
 OW
 Pu
-mA
+ib
 iT
 HA
 HA
@@ -28386,7 +28327,7 @@ HA
 HA
 dC
 iT
-mA
+ib
 iV
 FN
 wU
@@ -28412,14 +28353,14 @@ ue
 ZO
 cL
 IY
-ux
-mA
+VV
+ib
 ZO
 lz
 ZO
-mA
-mA
-mA
+ib
+ib
+ib
 iT
 HA
 HA
@@ -28643,8 +28584,8 @@ HA
 HA
 dC
 iT
-mA
-mA
+ib
+ib
 YM
 HJ
 bY
@@ -28658,18 +28599,18 @@ JV
 ZO
 ZO
 ZO
-mA
-mA
+ib
+ib
 ZO
 ZO
 ZO
 ZO
 ZO
 ZO
-mA
-mA
-RE
-mA
+ib
+ib
+Rz
+ib
 ZO
 UF
 HR
@@ -28900,20 +28841,20 @@ HA
 HA
 dC
 iT
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
 rm
 Ws
 ZO
-mA
-mA
+ib
+ib
 iT
 iT
 iT
@@ -29157,20 +29098,20 @@ HA
 HA
 dC
 iT
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-mA
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
+ib
 iT
 HA
 HA
