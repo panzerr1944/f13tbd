@@ -615,7 +615,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
 	termtag = "Private";
-	dir = 3
+	dir = 0
 	},
 /turf/open/floor/carpet/royalblue,
 /area/f13/enclave/command)
@@ -5637,7 +5637,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
 	termtag = "Private";
-	dir = 3;
+	dir = 0;
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
@@ -6901,7 +6901,8 @@
 	name = "encat";
 	health = 50;
 	faction = list("neutral", "hostile", "wastebot", "enclave", "BOS", "deathclaw", "supermutant");
-	maxHealth = 50
+	maxHealth = 50;
+	desc = "You could imagine it meowing 'GOD BLESS AMERICA, OORAH' if it could. Instead, it just gives comically cute looks. It does have a tiny american flag dyed into its fur though, which is cool."
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
