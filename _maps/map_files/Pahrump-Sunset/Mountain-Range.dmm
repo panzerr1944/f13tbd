@@ -466,11 +466,15 @@
 /turf/closed/wall/r_wall,
 /area/f13/enclave)
 "cx" = (
-/obj/structure/bed,
+/obj/structure/bed{
+	layer = 5
+	},
 /obj/structure/bed{
 	pixel_y = 12
 	},
-/obj/item/bedsheet/enclave,
+/obj/item/bedsheet/enclave{
+	layer = 5
+	},
 /obj/item/bedsheet/enclave{
 	pixel_y = 12
 	},
@@ -1975,7 +1979,6 @@
 "kL" = (
 /obj/structure/table/reinforced,
 /obj/item/flashlight/lamp,
-/obj/item/ship_in_a_bottle,
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/enclave/command)
 "kN" = (
@@ -7625,16 +7628,13 @@
 /area/f13/enclave)
 "Rh" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light{
-	dir = 6;
-	light_color = "#c1caff"
-	},
 /obj/machinery/button/door{
 	id = "sgtoffices";
 	normaldoorcontrol = 1;
 	pixel_x = 28;
 	specialfunctions = 4
 	},
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
 "Rj" = (
@@ -8534,7 +8534,7 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "Wh" = (
-/obj/machinery/computer/vertibird_console,
+/obj/structure/table/glass,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/vertibird)
 "Wk" = (
@@ -8937,10 +8937,7 @@
 /area/f13/enclave/vertibird)
 "YF" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light{
-	dir = 6;
-	light_color = "#c1caff"
-	},
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/enclave/command)
 "YH" = (
