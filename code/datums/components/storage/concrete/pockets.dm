@@ -98,9 +98,17 @@
 
 /datum/component/storage/concrete/pockets/shoes/Initialize()
 	. = ..()
-	cant_hold = typecacheof(list(/obj/item/screwdriver/power))
+	cant_hold = typecacheof(list(/obj/item/screwdriver/power,
+								/obj/item/screwdriver/hightech,
+								/obj/item/kitchen/knife/butcher,
+								/obj/item/reagent_containers/pill/patch/bitterdrink,
+								/obj/item/reagent_containers/pill/patch/healingpoultice,
+								/obj/item/reagent_containers/pill/patch/healingpowder,
+								/obj/item/reagent_containers/pill/patch/hydra,
+								/obj/item/reagent_containers/pill/patch/turbo,
+								/obj/item/reagent_containers/hypospray/combat,
+								/obj/item/reagent_containers/hypospray/magillitis))
 	can_hold = GLOB.storage_shoes_can_hold
-
 
 /datum/component/storage/concrete/pockets/pocketprotector
 	max_items = 3
@@ -203,17 +211,26 @@ GLOBAL_LIST_INIT(storage_medical_can_hold, typecacheof(list(
 	)))
 
 GLOBAL_LIST_INIT(storage_shoes_can_hold, typecacheof(list(
+	/obj/item/melee/onehanded/knife,
 	/obj/item/melee/smith/dagger,
-	/obj/item/reagent_containers/syringe,
-	/obj/item/reagent_containers/hypospray/medipen,
-	/obj/item/reagent_containers/dropper,
+	/obj/item/melee/smith/throwingknife,
+	/obj/item/smithing/daggerblade,
+	/obj/item/smithing/throwingknife,
+	/obj/item/smithing/knifeblade,
+	/obj/item/nullrod/tribal_knife,
+	/obj/item/kitchen/fork,
+	/obj/item/kitchen/knife,
+	/obj/item/scalpel,
 	/obj/item/screwdriver,
 	/obj/item/weldingtool/mini,
 	/obj/item/pen,
+	/obj/item/reagent_containers/syringe,
+	/obj/item/reagent_containers/hypospray,
+	/obj/item/reagent_containers/dropper,
+	/obj/item/reagent_containers/pill,
+	/obj/item/reagent_containers/medspray,
 	/obj/item/gun/ballistic/revolver/detective,
 	/obj/item/gun/ballistic/revolver/hobo/knifegun,
-	/obj/item/melee/onehanded/knife,
-	/obj/item/scalpel,
 	)))
 
 GLOBAL_LIST_INIT(storage_holster_can_hold, typecacheof(list(
@@ -224,11 +241,11 @@ GLOBAL_LIST_INIT(storage_holster_can_hold, typecacheof(list(
 	/obj/item/ammo_box/a357,
 	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/l10mm,
-	/obj/item/ammo_box/a762,
+	/obj/item/ammo_box/a762mm,
 	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/m44,
-	/obj/item/ammo_box/a762,
-	/obj/item/ammo_box/a556/stripper,
+	/obj/item/ammo_box/a762mm,
+	/obj/item/ammo_box/a556mm/stripper,
 	/obj/item/ammo_box/needle,
 	/obj/item/ammo_box/a308,
 	/obj/item/ammo_box/c4570,
@@ -286,11 +303,11 @@ GLOBAL_LIST_INIT(storage_bulletbelt_can_hold, typecacheof(list(
 	/obj/item/ammo_box/a357,
 	/obj/item/ammo_box/c38,
 	/obj/item/ammo_box/l10mm,
-	/obj/item/ammo_box/a762,
+	/obj/item/ammo_box/a762mm,
 	/obj/item/ammo_box/shotgun,
 	/obj/item/ammo_box/m44,
-	/obj/item/ammo_box/a762,
-	/obj/item/ammo_box/a556/stripper,
+	/obj/item/ammo_box/a762mm,
+	/obj/item/ammo_box/a556mm/stripper,
 	/obj/item/ammo_box/needle,
 	/obj/item/ammo_box/a308,
 	/obj/item/ammo_box/c4570,

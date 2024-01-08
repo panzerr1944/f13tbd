@@ -68,7 +68,7 @@
 	exp_requirements = 1000
 
 	loadout_options = list(
-		/datum/outfit/loadout/cpt_ballistics, // G11E and Plasma Glock
+		/datum/outfit/loadout/cpt_ballistics, // Assault Carbine and Plasma Glock
 		/datum/outfit/loadout/cpt_flamer, //Flamer+el captain
 		)
 
@@ -96,7 +96,7 @@
 
 /datum/outfit/loadout/cpt_ballistics
 	name = "Ranged Lead"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/glock = 1,
@@ -241,9 +241,9 @@
 
 /datum/outfit/loadout/gysgt_caster
 	name = "Point Defense Assaultman"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/g11
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/g11 = 1,
-		/obj/item/ammo_box/magazine/m473 = 2,
+		/obj/item/ammo_box/magazine/mg11 = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/grenade/f13/frag = 1
@@ -346,7 +346,7 @@
 /datum/outfit/loadout/sgt_classic
 	name = "Tactical Assaultman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_carbine/ak112 = 1,
+		/obj/item/gun/ballistic/automatic/assault_rifle/ak112 = 1,
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1, //they get a flashlight in their bag
@@ -510,8 +510,8 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/reconmarine, // R-93
-		/datum/outfit/loadout/mobileartillery, // Trench gun
+		/datum/outfit/loadout/reconmarine, // Infantry Rifle
+		/datum/outfit/loadout/mobileartillery, // Trench Shotgun
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -533,7 +533,7 @@
 
 /datum/outfit/loadout/reconmarine
 	name = "Pointman Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/r93
+	suit_store = /obj/item/gun/ballistic/automatic/infantry_rifle
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 2,
 		/obj/item/gun/energy/laser/plasma/pistol/light = 1,
