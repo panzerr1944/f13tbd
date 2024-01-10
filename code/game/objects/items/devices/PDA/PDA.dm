@@ -1274,6 +1274,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	else
 		to_chat(usr, "You do not have a PDA. You should make an issue report about this.")
 
+/*
 /mob/living/silicon/ai/verb/cmd_toggle_pda_silent()
 	set category = "AI Commands"
 	set name = "PDA - Toggle Ringer"
@@ -1285,6 +1286,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 		to_chat(usr, span_notice("PDA ringer toggled [(aiPDA.silent ? "Off" : "On")]!"))
 	else
 		to_chat(usr, "You do not have a PDA. You should make an issue report about this.")
+*/
 
 /mob/living/silicon/ai/proc/cmd_show_message_log(mob/user)
 	if(incapacitated())
