@@ -236,7 +236,7 @@
 	glasses = /obj/item/clothing/glasses/night/ncr
 	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/w308 = 3,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/storage/belt/utility/full/engi = 1,
 		/obj/item/stack/crafting/armor_plate/ten = 1,
