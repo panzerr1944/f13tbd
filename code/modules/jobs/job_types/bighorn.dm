@@ -72,7 +72,6 @@ Mayor
 		/obj/item/pen/fountain/captain = 1,
 		/obj/item/storage/bag/money/small/mayor = 1, //Cash for payouts. Incredible amount, seeing as next to the Banker, he's the closest thing to a treasury keeper.
 		/obj/item/pda = 1,
-		/obj/item/card/id/selfassign = 1,
 		)
 /*--------------------------------------------------------------*/
 /datum/job/bighorn/f13sheriff
@@ -553,7 +552,6 @@ Mayor
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/storage/fancy/candle_box = 1,
 		/obj/item/pda = 1,
-		/obj/item/card/id/selfassign = 1,
 		/obj/item/storage/bag/money/small/settler = 1,
 		)
 //end preacher
@@ -694,5 +692,4 @@ Mayor
 	/obj/item/clothing/gloves/evening = 1,
 	/obj/item/clothing/gloves/color/white = 1,
 	/obj/item/pda = 1,
-	/obj/item/card/id/selfassign = 1,
 	)
