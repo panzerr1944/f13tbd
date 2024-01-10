@@ -155,7 +155,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/twohanded/baseball/spiked = 1,
-		/obj/item/ammo_box/shotgun/buck = 4,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/book/granter/trait/selection = 1)
 
 /datum/outfit/loadout/soldierb
@@ -166,7 +166,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	head = /obj/item/clothing/head/helmet/f13/khan/bandana
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/msmg9mm = 3,
+		/obj/item/ammo_box/magazine/msmg9mm = 2,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/book/granter/trait/selection = 1)
 
