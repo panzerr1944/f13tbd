@@ -22,27 +22,27 @@
 								/obj/item/reagent_containers/food/snacks/grown/rice = 1,
 								/obj/item/reagent_containers/food/snacks/grown/oat = 1,
 								/obj/item/stack/sheet/hay = 1,
-								/obj/item/reagent_containers/food/snacks/grown/broc = 5,
-								/obj/item/reagent_containers/food/snacks/grown/xander = 5,
-								/obj/item/reagent_containers/food/snacks/grown/pungafruit = 5,
-								/obj/item/reagent_containers/food/snacks/grown/feracactus = 5,
-								/obj/item/reagent_containers/food/snacks/grown/fungus = 5,
-								/obj/item/reagent_containers/food/snacks/grown/agave = 5,
-								/obj/item/reagent_containers/pill/patch/jet = 10,
-								/obj/item/reagent_containers/pill/patch/healingpowder = 30,
-								/obj/item/reagent_containers/hypospray/medipen/psycho = 20,
+								/obj/item/reagent_containers/food/snacks/grown/broc = 2,
+								/obj/item/reagent_containers/food/snacks/grown/xander = 2,
+								/obj/item/reagent_containers/food/snacks/grown/pungafruit = 2,
+								/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
+								/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
+								/obj/item/reagent_containers/food/snacks/grown/agave = 2,
+								/obj/item/reagent_containers/pill/patch/jet = 30,
+								/obj/item/reagent_containers/pill/patch/healingpowder = 10,
+								/obj/item/reagent_containers/hypospray/medipen/psycho = 40,
 								/obj/item/reagent_containers/hypospray/medipen/medx = 75,
-								/obj/item/reagent_containers/pill/patch/healingpoultice = 50,
+								/obj/item/reagent_containers/pill/patch/healingpoultice = 20,
 								/obj/item/export/bottle/gin = 25,
 								/obj/item/export/bottle/wine = 25,
 								/obj/item/export/bottle/whiskey = 25,
 								/obj/item/export/bottle/vodka = 25,
 								/obj/item/export/bottle/tequila = 25,
-								/obj/item/export/bottle/patron = 50,
+								/obj/item/export/bottle/patron = 30,
 								/obj/item/export/bottle/rum = 25,
 								/obj/item/export/bottle/vermouth = 25,
 								/obj/item/export/bottle/kahlua = 25,
-								/obj/item/export/bottle/goldschlager = 75,
+								/obj/item/export/bottle/goldschlager = 30,
 								/obj/item/export/bottle/hcider = 25,
 								/obj/item/export/bottle/cognac = 25,
 								/obj/item/export/bottle/absinthe = 25,
@@ -53,7 +53,7 @@
 								/obj/item/export/bottle/champagne = 25,
 								/obj/item/export/bottle/trappist = 25,
 								/obj/item/export/bottle/minikeg = 25,
-								/obj/item/export/bottle/nukashine = 100,
+								/obj/item/export/bottle/nukashine = 30,
 								)
 
 /obj/machinery/mineral/wasteland_trader/general
@@ -82,14 +82,14 @@
 	dat +="<div class='statusDisplay'>"
 	dat += "<b>Accepted goods and prices:</b><br>"
 	dat += "Wheat/Oats/Rice/Hay : 1 caps<br>"
-	dat += "Broc/Xander/Punga Fruit/Barrel Cactus Fruit/Cave Fungus/Agave : 5 caps<br>"
+	dat += "Broc/Xander/Punga Fruit/Barrel Cactus Fruit/Cave Fungus/Agave : 2 caps<br>"
 	dat += "Iron Sheets : 1.5 caps<br>"
 	dat += "Silver Bars: 5 caps<br>"
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
-	dat += "Jet/Psycho/MedX : 10/20/75 caps<br>"
-	dat += "Healing Powder/Healing Poultice : 30/50 caps<br>"
-	dat += "Sealed Bottle of Alcohol: 25-100 caps<br>"
+	dat += "Jet/Psycho/MedX : 30/40/75 caps<br>"
+	dat += "Healing Powder/Healing Poultice : 10/20 caps<br>"
+	dat += "Sealed Bottle of Alcohol: 25-30 caps<br>"
 	dat += ""
 	dat += "</div>"
 
@@ -307,28 +307,28 @@ Fence
 /obj/machinery/mineral/wasteland_trader/gunbuyer
 	name = "Gun Repository"
 	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Yuma Wasteland Supply Inc. thanks you for disarming the wasteland."
-	goods_list = list(/obj/item/gun/ballistic/automatic/hobo/zipgun = 5,
-						/obj/item/gun/ballistic/revolver/hobo = 5,
-						/obj/item/gun/ballistic/revolver/detective = 5,
-						/obj/item/gun/ballistic/revolver/hobo = 8,
-						/obj/item/gun/ballistic/revolver/hobo/piperifle = 8,
-						/obj/item/gun/ballistic/revolver/hobo/knifegun = 8,
-						/obj/item/gun/ballistic/revolver/hobo/pepperbox = 8,
-						/obj/item/gun/ballistic/revolver/single_shotgun = 8,
-						/obj/item/gun/ballistic/automatic/pistol/n99 = 8,
-						/obj/item/gun/ballistic/automatic/pistol/pistol22 = 8,
-						/obj/item/gun/ballistic/automatic/pistol/ninemil = 8,
-						/obj/item/gun/ballistic/automatic/pistol/sig = 8,
-						/obj/item/gun/ballistic/automatic/pistol/beretta = 8,
-						/obj/item/gun/ballistic/automatic/pistol/m1911 = 8,
-						/obj/item/gun/ballistic/rifle/hunting = 10,
-						/obj/item/gun/ballistic/revolver/colt357 = 10,
-						/obj/item/gun/ballistic/rifle/mosin = 10,
-						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10,
-						/obj/item/gun/ballistic/revolver/widowmaker = 10,
-						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
-						/obj/item/gun/ballistic/automatic/autopipe = 15,
-						/obj/item/gun/energy/lasmusket = 15,
+	goods_list = list(/obj/item/gun/ballistic/automatic/hobo/zipgun = 10,
+						/obj/item/gun/ballistic/revolver/hobo = 10,
+						/obj/item/gun/ballistic/revolver/detective = 10,
+						/obj/item/gun/ballistic/revolver/hobo = 10,
+						/obj/item/gun/ballistic/revolver/hobo/piperifle = 10,
+						/obj/item/gun/ballistic/revolver/hobo/knifegun = 10,
+						/obj/item/gun/ballistic/revolver/hobo/pepperbox = 10,
+						/obj/item/gun/ballistic/revolver/single_shotgun = 10,
+						/obj/item/gun/ballistic/automatic/pistol/n99 = 10,
+						/obj/item/gun/ballistic/automatic/pistol/pistol22 = 10,
+						/obj/item/gun/ballistic/automatic/pistol/ninemil = 10,
+						/obj/item/gun/ballistic/automatic/pistol/sig = 10,
+						/obj/item/gun/ballistic/automatic/pistol/beretta = 10,
+						/obj/item/gun/ballistic/automatic/pistol/m1911 = 10,
+						/obj/item/gun/ballistic/rifle/hunting = 15,
+						/obj/item/gun/ballistic/revolver/colt357 = 15,
+						/obj/item/gun/ballistic/rifle/mosin = 20,
+						/obj/item/gun/ballistic/revolver/caravan_shotgun = 15,
+						/obj/item/gun/ballistic/revolver/widowmaker = 15,
+						/obj/item/gun/ballistic/revolver/winchesterrebored = 15,
+						/obj/item/gun/ballistic/automatic/autopipe = 20,
+						/obj/item/gun/energy/lasmusket = 25,
 						/obj/item/stack/crafting/armor_plate = 20,
 						)
 
@@ -343,8 +343,8 @@ Fence
 	dat += "<b>Disarming the Wasteland one gun at a time.</b><br>"
 	dat += "<b>Warning: The automated system cannot guarantee an accurate appraisal of value.</b><br>"
 	dat += "<b>Accepted goods and prices:</b><br>"
-	dat += "Pistols and revolvers: 5-10 caps<br>"
-	dat += "Rifles and Shotguns : 10-15 caps<br>"
+	dat += "Pistols and revolvers: 10-15 caps<br>"
+	dat += "Rifles and Shotguns : 15-20 caps<br>"
 	dat += "Armor Plate: 20 caps<br>"
 	dat += "Does not accept weapons of historical or artisanal value. Those belong in a musuem."
 	dat += ""
