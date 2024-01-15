@@ -29,7 +29,7 @@
 								/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
 								/obj/item/reagent_containers/food/snacks/grown/agave = 2,
 								/obj/item/reagent_containers/pill/patch/jet = 30,
-								/obj/item/reagent_containers/pill/patch/healingpowder = 10,
+								/obj/item/reagent_containers/pill/patch/healingpowder = 5,
 								/obj/item/reagent_containers/hypospray/medipen/psycho = 40,
 								/obj/item/reagent_containers/hypospray/medipen/medx = 75,
 								/obj/item/reagent_containers/pill/patch/healingpoultice = 20,
@@ -53,7 +53,7 @@
 								/obj/item/export/bottle/champagne = 25,
 								/obj/item/export/bottle/trappist = 25,
 								/obj/item/export/bottle/minikeg = 25,
-								/obj/item/export/bottle/nukashine = 30,
+								/obj/item/export/bottle/nukashine = 40,
 								)
 
 /obj/machinery/mineral/wasteland_trader/general
@@ -88,8 +88,8 @@
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
 	dat += "Jet/Psycho/MedX : 30/40/75 caps<br>"
-	dat += "Healing Powder/Healing Poultice : 10/20 caps<br>"
-	dat += "Sealed Bottle of Alcohol: 25-30 caps<br>"
+	dat += "Healing Powder/Healing Poultice : 5/20 caps<br>"
+	dat += "Sealed Bottle of Alcohol: 25-40 caps<br>"
 	dat += ""
 	dat += "</div>"
 
