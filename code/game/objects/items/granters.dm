@@ -1083,7 +1083,7 @@
 		desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
-	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Fireant Rituals","Fisting Expert","Spiritual Mending")
+	var/list/choices = list("Hit Them With Sticks","Pugilist","Brahmin Tender","Bow Proficiency","Fisting Expert","Spiritual Mending")
 	if(granted_trait == null)
 		var/choice = input("Choose a trait:") in choices
 		switch(choice)
@@ -1098,8 +1098,8 @@
 			if("Brahmin Tender")
 				granted_trait = TRAIT_CALCIUM_HEALER //Heal from milk.
 				traitname = "drinking milk"
-			if("Fireant Rituals")
-				granted_trait = TRAIT_IGNOREDAMAGESLOWDOWN //Removes the slowdown from being injured, but not from fractures, stamdamage/etc.
+			if("Bow Proficiency") //ORIGINALLY: Trait "Ignore Damage Slowdown" - Comically OP in practice, deserved removal
+				granted_trait = TRAIT_AUTO_DRAW //Automatically draws the next arrow in the weapons internal magazine, removing the need for manual cycling.
 				traitname = "...pain resistance"
 			if("Fisting Expert") //ORIGINALLY: Trait "Hard Yards" - Tribals spawn with this trait, so it was useless
 				granted_trait = TRAIT_PERFECT_ATTACKER //Makes all punches do the highet possible damage roll, where-as Iron-fist buffs the raw damage you can do.
