@@ -44,6 +44,11 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/vault)
+"aaC" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "aaE" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
@@ -2871,24 +2876,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/ahs)
-"dlE" = (
-/obj/machinery/light{
-	light_color = "#e8eaff"
-	},
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "dmB" = (
 /obj/structure/chair/f13foldupchair,
 /obj/machinery/light{
@@ -3492,18 +3479,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "dVk" = (
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "dVs" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
@@ -5734,6 +5714,24 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/vault)
+"gwD" = (
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 300;
+	maxHealth = 300;
+	armour_penetration = 0.3
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "gyj" = (
 /obj/effect/decal/cleanable/blood/gibs/human/body,
 /obj/effect/decal/remains/human,
@@ -6596,12 +6594,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/ahs)
-"htk" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "htO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -7724,6 +7716,14 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"iDB" = (
+/mob/living/simple_animal/hostile/renegade/defender{
+	armour_penetration = 0.6
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "iDC" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/vault)
@@ -9500,14 +9500,6 @@
 /obj/structure/table/booth,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
-"kyQ" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/machinery/autolathe/ammo/unlocked_basic,
-/obj/item/stack/ore/blackpowder/twenty,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "kzg" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -9656,6 +9648,16 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/bunker)
+"kEE" = (
+/mob/living/simple_animal/hostile/renegade/grunt{
+	extra_projectiles = 4
+	},
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
 /area/f13/bunker)
 "kEJ" = (
 /obj/item/flag/bos,
@@ -16048,6 +16050,14 @@
 /obj/effect/landmark/start/f13/vaultdweller,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/vault)
+"rkQ" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/autolathe/ammo/unlocked_basic,
+/obj/item/stack/ore/blackpowder/twenty,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "rkV" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -16238,6 +16248,19 @@
 	icon_state = "dirt"
 	},
 /area/f13/caves)
+"ryB" = (
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/mob/living/simple_animal/hostile/renegade{
+	loot = list();
+	melee_damage_lower = 10;
+	melee_damage_upper = 20;
+	rapid_melee = 2;
+	health = 300;
+	maxHealth = 300;
+	armour_penetration = 0.3
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "ryH" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -16310,6 +16333,18 @@
 	icon_state = "yellowsiding"
 	},
 /area/f13/city)
+"rCb" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/engie{
+	extra_projectiles = 1;
+	environment_smash = 4
+	},
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "rCt" = (
 /obj/item/storage/backpack/duffelbag/med/surgery{
 	pixel_y = 11;
@@ -17503,14 +17538,6 @@
 	dir = 8
 	},
 /area/f13/vault)
-"sXm" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
-	},
-/area/f13/city)
 "sXN" = (
 /obj/item/crafting/abraxo,
 /turf/open/floor/plasteel/f13/vault_floor/green/greenchess/greenchess2,
@@ -17681,11 +17708,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/underground/cave)
-"teZ" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "tfn" = (
 /obj/effect/turf_decal/caution,
 /turf/open/floor/f13/wood,
@@ -18886,6 +18908,7 @@
 "uue" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -19664,7 +19687,7 @@
 /area/f13/bunker)
 "vfR" = (
 /obj/structure/lattice,
-/turf/closed/indestructible/f13vaultrusted,
+/turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "vfZ" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -28291,11 +28314,11 @@ dJD
 mKT
 kjM
 oqm
-hrZ
-hrZ
 oqm
 oqm
 oqm
+tKw
+tKw
 tPQ
 vtn
 vtn
@@ -28545,12 +28568,12 @@ oqm
 rnd
 ucH
 lwy
-ucH
+lad
 ifA
-oqm
-oqm
-oqm
-oqm
+tKw
+tKw
+tKw
+tKw
 arI
 fgN
 uUF
@@ -29063,7 +29086,7 @@ ucH
 ucH
 lwy
 tZf
-lad
+rCb
 hch
 lwy
 lwy
@@ -29470,7 +29493,7 @@ akh
 oPX
 akh
 vCf
-dVk
+ryB
 akh
 mxj
 sfc
@@ -29573,12 +29596,12 @@ oqm
 lwy
 ucH
 lwy
-lwy
+kEE
 ifA
-oqm
-oqm
-oqm
-oqm
+tKw
+tKw
+tKw
+tKw
 arI
 pMc
 pEe
@@ -29833,17 +29856,17 @@ uue
 kDc
 kjM
 oqm
-hrZ
-hrZ
 oqm
 oqm
 oqm
+tKw
+tKw
 rTj
 rYk
 ucH
 lwy
 vjd
-oqm
+tKw
 oqm
 hrZ
 hrZ
@@ -30092,7 +30115,7 @@ oqm
 hrZ
 hrZ
 hrZ
-hrZ
+oqm
 oqm
 vfR
 vfR
@@ -30509,7 +30532,7 @@ sfc
 sfc
 lOD
 hTg
-kyQ
+rkQ
 vMb
 gHL
 tGX
@@ -38712,7 +38735,7 @@ tGX
 uLm
 sfc
 sfc
-teZ
+aaC
 sfc
 sfc
 sfc
@@ -38969,7 +38992,7 @@ tGX
 tGX
 sfc
 sfc
-htk
+dVk
 sfc
 sfc
 sfc
@@ -39762,7 +39785,7 @@ pYx
 jBt
 pYx
 hEL
-sXm
+iDB
 pYx
 tGX
 tGX
@@ -41294,7 +41317,7 @@ iEs
 khx
 iEs
 gLT
-dlE
+gwD
 lOD
 pYx
 uUV
