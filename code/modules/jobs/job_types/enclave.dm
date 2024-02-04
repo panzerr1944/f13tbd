@@ -126,8 +126,8 @@
 /datum/job/enclave/enclavelt
 	title = "Enclave Lieutenant"
 	flag = F13USLT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the commissioned commanding officer of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced soldier, or you may be a scientist or academic pushed into command. Your job is to direct your marine company to achieve Enclave goals. <br>\
 	You are the leader of the Enclave and set their mission for the round. This can be anything from getting a secret trade agreement with the town to capturing Brotherhood paladins for interrogation. Remember that you have precious little people to spare: every problem has to be approached carefully. Work with the Gunnery Sergeant to make plans."
@@ -203,8 +203,8 @@
 /datum/job/enclave/f13gysergeant
 	title = "Enclave Gunnery Sergeant"
 	flag = F13USGYSGT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_CHANGE_IDS, ACCESS_ENCLAVE_COMMAND, ACCESS_SECURITY, ACCESS_AI_UPLOAD)
 	description = "You're the second in command of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You are a hardened veteran, with a breadth of experience serving America.  Second in command after the Lieutenant, your role is to assist them in planning, issue their orders to the Sergeant and regular troops, and use your knowledge to ensure smooth operations for the company."
 	supervisors = "The Lieutenant."
@@ -286,8 +286,8 @@
 /datum/job/enclave/enclavesgt
 	title = "Enclave Sergeant"
 	flag = F13USSGT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're an NCO in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You are a well-trained soldier, entrusted with a valuable suit of Advanced Power Armor and heavy weapons. Depending on the mission, you may provide fire support in heavy combat or you may command covert teams in the field."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -370,8 +370,8 @@
 /datum/job/enclave/enclavecpl
 	title = "Enclave Armored Infantry"
 	flag = F13USCPL
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Sergeants, Gunnery Sergeants, and Lieutenants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavecpl
@@ -499,8 +499,8 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Marine"
 	flag = F13USPRIVATE
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're a grunt in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You may be an experienced trooper, or you may be a fresh recruit in need of training, either from the Enclave's tiny population, the hidden, Enclave-controlled Vault 45, or from concealed Enclave cryostasis bunkers. Be careful not to do anything that will expose the Enclave's presence to its many enemies."
 	supervisors = "The Lieutenant, the Sergeants, and the Specialists."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -570,8 +570,8 @@
 /datum/job/enclave/enclavesci
 	title = "Enclave Scientist"
 	flag = F13USSCIENTIST
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're a highly-trained academic working in a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You're responsible for a wide array of non-combat tasks, from materials science research to medical treatment to biological weapons and augmentations testing. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your fellow Americans, and avoid leaving the bunker alone if not absolutely necessary."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
@@ -627,13 +627,12 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/smg22)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/plasmapistol)
 
-/*
 //Pilot
 /datum/job/enclave/enclavepilot
 	title = "Enclave Pilot Officer"
 	flag = F13USSCIENTIST
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're the garrison on the operations floor of a far larger complex. This complex sits within the Black Hills mountain range. You're responsible for the operation of your assigned aircraft on base and within field operations. Support the First Lieutenant."
 	supervisors = "Enclave Upper Echelon, Air Force Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavepilot
@@ -670,14 +669,12 @@
 	H.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 	H.grant_language(/datum/language/codespeak, TRUE, TRUE, LANGUAGE_MIND)
 
-*/
-
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Bunker Duty"
 	flag = F13USBDUTY
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 0
+	spawn_positions = 0
 	description = "You're either new meat or an off-duty member of a force of Enclave Remnant marines, part of the Rapid Reaction Corps. You're a non-combatant, and may be in training or just have a specialty not useful in combat, like nursing or maintenance."
 	enforces = "You are not permitted to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface. You cannot run dungeons."
 	supervisors = "Everyone else."
@@ -828,8 +825,8 @@
 /datum/job/enclave/encborg
 	title = "Enclave Synthetic"
 	flag = F13ENCBORG
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Lieutenant and Science Officers"
 	exp_type = EXP_TYPE_ENCLAVE
 	exp_requirements = 600

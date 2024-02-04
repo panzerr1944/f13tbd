@@ -682,6 +682,7 @@
 /obj/effect/decal/marking{
 	icon_state = "doubleverticalcorroded"
 	},
+/obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
 	},
@@ -33207,10 +33208,9 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland/bighorn)
 "gvL" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 246;
-	destination_y = 75;
-	destination_z = 11
+/obj/effect/landmark/latejoin,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0"
 	},
 /area/f13/tunnel/northeast)
 "gvR" = (
@@ -37463,10 +37463,9 @@
 	},
 /area/f13/building/massfusion)
 "irY" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 248;
-	destination_y = 75;
-	destination_z = 11
+/obj/effect/landmark/start/f13/wastelander,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain0"
 	},
 /area/f13/tunnel/northeast)
 "isj" = (
@@ -44109,10 +44108,9 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "lew" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 247;
-	destination_y = 75;
-	destination_z = 11
+/obj/effect/landmark/latejoin,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalleftborderright0"
 	},
 /area/f13/tunnel/northeast)
 "leO" = (
@@ -46803,10 +46801,7 @@
 	},
 /area/f13/building/firestation)
 "mfk" = (
-/obj/structure/decoration/warning{
-	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
-	pixel_x = 32
-	},
+/obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
 	},
@@ -52828,13 +52823,6 @@
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building/massfusion)
-"oGu" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 243;
-	destination_y = 75;
-	destination_z = 11
-	},
-/area/f13/tunnel/northeast)
 "oGJ" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -63371,15 +63359,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland/heaven)
-"tbC" = (
-/obj/structure/decoration/warning{
-	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
-	pixel_y = 32
-	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain0"
-	},
-/area/f13/wasteland/train)
 "tbF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/pinup_pink{
@@ -71123,13 +71102,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/building)
-"wiN" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 244;
-	destination_y = 75;
-	destination_z = 11
-	},
-/area/f13/tunnel/northeast)
 "wiQ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -71264,10 +71236,7 @@
 /turf/open/floor/f13,
 /area/f13/building)
 "wkv" = (
-/obj/structure/decoration/warning{
-	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
-	pixel_x = -32
-	},
+/obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -74147,13 +74116,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building/mall)
-"xwV" = (
-/turf/closed/indestructible/f13/matrix/transition{
-	destination_x = 245;
-	destination_y = 75;
-	destination_z = 11
-	},
-/area/f13/tunnel/northeast)
 "xxx" = (
 /obj/structure/simple_door/interior,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -134856,7 +134818,7 @@ bkR
 (230,1,1) = {"
 aag
 wkv
-hKY
+lew
 dNW
 dNW
 dNW
@@ -135111,8 +135073,8 @@ xLv
 aaa
 "}
 (231,1,1) = {"
-oGu
-aas
+aag
+irY
 aas
 aas
 fKM
@@ -135131,7 +135093,7 @@ aax
 aaE
 aax
 ijB
-tbC
+rHm
 rHm
 rHm
 rHm
@@ -135368,8 +135330,8 @@ xLv
 aaa
 "}
 (232,1,1) = {"
-wiN
-aas
+aag
+irY
 aas
 fKM
 hVG
@@ -135625,8 +135587,8 @@ xLv
 aaa
 "}
 (233,1,1) = {"
-xwV
-aas
+aag
+irY
 aas
 fKM
 hVG
@@ -135882,7 +135844,7 @@ xLv
 aaa
 "}
 (234,1,1) = {"
-xwV
+aag
 acA
 aaz
 aaz
@@ -136139,8 +136101,8 @@ xLv
 aaa
 "}
 (235,1,1) = {"
-gvL
-aas
+aag
+irY
 aas
 aas
 aaS
@@ -136396,8 +136358,8 @@ xLv
 aaa
 "}
 (236,1,1) = {"
-lew
-aas
+aag
+irY
 aas
 aas
 fKM
@@ -136653,8 +136615,8 @@ juJ
 aaa
 "}
 (237,1,1) = {"
+aag
 irY
-aas
 aas
 aas
 aas
@@ -136673,7 +136635,7 @@ aay
 aaE
 aay
 ijB
-tbC
+rHm
 rHm
 rHm
 rHm
@@ -136912,7 +136874,7 @@ aaa
 (238,1,1) = {"
 aag
 mfk
-aao
+gvL
 lvB
 lvB
 lvB
