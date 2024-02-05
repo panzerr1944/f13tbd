@@ -698,11 +698,7 @@
 	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
-/obj/item/clothing/head/helmet/f13/ncr/officer/captain				//NCR Captain cap
-	name = "\improper NCR officer peaked cap"
-	desc = "A tan peaked cap with a silver pin, worn by high-ranking officers of the NCRA."
-	icon_state = "ncr_dresscap"
-	item_state = "ncr_dresscap"
+/obj/item/clothing/head/helmet/f13/ncr/officer/captain				//NCR Captain beret
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 

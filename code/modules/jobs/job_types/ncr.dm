@@ -179,6 +179,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	jobtype = /datum/job/ncr/f13captain
 	id = /obj/item/card/id/dogtag/ncrcaptain
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
+	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain
 	head = /obj/item/clothing/head/helmet/f13/ncr/officer/captain
 	ears = /obj/item/radio/headset/headset_ncr/command
 	glasses = /obj/item/clothing/glasses/night/ncr
@@ -203,7 +204,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrcptmelee
 	name = "Backline Support"
-	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain/coat
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 3,
@@ -211,7 +211,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/ncrcptshotgun
 	name = "Frontliner"
-	suit = /obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain
 	suit_store = /obj/item/gun/ballistic/automatic/shotgun/pancor
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/d12g = 3,

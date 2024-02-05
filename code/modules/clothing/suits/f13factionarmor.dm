@@ -483,19 +483,17 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.14
 
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain				//NCR Captain Armor, Frontline loadout
+/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain				//NCR Captain Armor
 	name = "\improper NCR reinforced officer mantle vest"
 	desc = "A standard issue NCR infantry vest reinforced with a groinpad and a mantle. Additional plating was added to protect the shoulders and arms. Intended for use by high ranking officers of the NCRA."
 	icon_state = "ncr_captain_armour"
 	item_state = "ncr_captain_armour"
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
-
-/obj/item/clothing/suit/armor/f13/ncr/reinforced/mantle/officer/captain/coat		//NCR Captain Armor, Backline loadout
-	name = "\improper NCR officer greatcoat"
-	desc = "A special issue NCR officer's greatcoat with heavy ballistic padding sewn-in for protection."
-	icon_state = "ncr_officer_coat"
-	item_state = "ncr_officer_coat"
+	unique_reskin = list(
+		"M1" = "ncr_captain_armour",
+		"M2" = "ncr_officer_coat",
+	)
 
 /obj/item/clothing/suit/armor/f13/combat/ncr
 	name = "\improper NCR combat armor"
