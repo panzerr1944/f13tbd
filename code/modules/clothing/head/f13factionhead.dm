@@ -699,6 +699,10 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
 /obj/item/clothing/head/helmet/f13/ncr/officer/captain				//NCR Captain beret
+	name = "\improper NCR captain beret"
+	desc = "A green beret with a golden pin, worn by captains of the NCRA."
+	icon_state = "ncr_captain_beret"
+	item_state = "ncr_captain_beret"
 	armor = list("melee" = 35, "bullet" = 50, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10)
 
