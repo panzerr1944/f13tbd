@@ -1120,13 +1120,7 @@
 /area/f13/tunnel)
 "aGW" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2
-	},
+/mob/living/simple_animal/hostile/renegade/drifter/sniper,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "aHf" = (
@@ -1216,9 +1210,7 @@
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/raiders)
 "aMy" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "aNf" = (
@@ -1676,12 +1668,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bue" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	armour_penetration = 0.5;
-	rapid_melee = 2
-	},
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "buK" = (
@@ -4138,13 +4125,7 @@
 "bOS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2
-	},
+/mob/living/simple_animal/hostile/renegade/drifter/sniper,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "bOT" = (
@@ -5389,15 +5370,7 @@
 "cgp" = (
 /obj/structure/chair/f13foldupchair,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -6503,15 +6476,7 @@
 	pixel_x = 9;
 	pixel_y = -11
 	},
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -6571,12 +6536,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/raiders)
 "cOQ" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	armour_penetration = 0.5;
-	rapid_melee = 2
-	},
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
 	},
@@ -7187,9 +7147,7 @@
 /area/f13/raiders)
 "dxo" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -7440,9 +7398,7 @@
 /obj/structure/chair/folding{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/dirt,
 /area/f13/tunnel)
 "dMm" = (
@@ -7526,9 +7482,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/generic,
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "dSS" = (
@@ -7955,12 +7909,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "enC" = (
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	armour_penetration = 0.5;
-	rapid_melee = 2
-	},
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "enI" = (
@@ -8607,13 +8556,7 @@
 /area/f13/tunnel)
 "fal" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2
-	},
+/mob/living/simple_animal/hostile/renegade/drifter/sniper,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "faJ" = (
@@ -8750,9 +8693,7 @@
 /obj/structure/sign/poster/contraband/atmosia_independence{
 	pixel_y = 32
 	},
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "fjf" = (
@@ -8764,15 +8705,7 @@
 /area/f13/building/massfusion)
 "fkk" = (
 /obj/effect/overlay/junk/oldpipes,
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "fks" = (
@@ -9036,9 +8969,7 @@
 /area/f13/bunker)
 "fzH" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "fzM" = (
@@ -9239,9 +9170,7 @@
 /obj/structure/chair/folding{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/dirt,
 /area/f13/tunnel)
 "fOG" = (
@@ -10230,13 +10159,7 @@
 	},
 /area/f13/tunnel)
 "hgg" = (
-/mob/living/simple_animal/hostile/renegade/drifter{
-	vision_range = 15;
-	minimum_distance = 8;
-	health = 300;
-	check_friendly_fire = 0;
-	armour_penetration = 0.2
-	},
+/mob/living/simple_animal/hostile/renegade/drifter/sniper,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "hhS" = (
@@ -10253,12 +10176,7 @@
 "hit" = (
 /obj/structure/lattice,
 /obj/structure/chair/f13foldupchair,
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	armour_penetration = 0.5;
-	rapid_melee = 2
-	},
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "hiS" = (
@@ -10288,12 +10206,7 @@
 /area/f13/sewer)
 "hkd" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/guardian{
-	extra_projectiles = 2;
-	melee_queue_distance = 2;
-	armour_penetration = 0.5;
-	rapid_melee = 2
-	},
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -10958,9 +10871,7 @@
 	},
 /area/f13/building/massfusion)
 "ial" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -11442,9 +11353,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -11907,9 +11816,7 @@
 /area/f13/sewer)
 "jgt" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/doc{
-	extra_projectiles = 2
-	},
+/mob/living/simple_animal/hostile/renegade/doc/medic,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "jgU" = (
@@ -13521,10 +13428,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "ldj" = (
-/mob/living/simple_animal/hostile/renegade/engie{
-	extra_projectiles = 1;
-	environment_smash = 4
-	},
+/mob/living/simple_animal/hostile/renegade/engie/breacher,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "ldo" = (
@@ -14477,9 +14381,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -16518,9 +16420,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "oMc" = (
-/mob/living/simple_animal/hostile/renegade/grunt{
-	extra_projectiles = 4
-	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "oMg" = (
@@ -17760,9 +17660,7 @@
 /area/f13/tunnel)
 "qgM" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/doc{
-	extra_projectiles = 2
-	},
+/mob/living/simple_animal/hostile/renegade/doc/medic,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qgP" = (
@@ -19479,10 +19377,7 @@
 /area/f13/tunnel/bighorn)
 "sou" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/engie{
-	extra_projectiles = 1;
-	environment_smash = 4
-	},
+/mob/living/simple_animal/hostile/renegade/engie/breacher,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -20348,15 +20243,7 @@
 /area/f13/brotherhood)
 "tsA" = (
 /obj/structure/junk/small/bed,
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "tsF" = (
@@ -20572,15 +20459,7 @@
 /area/f13/caves)
 "tBI" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade{
-	loot = list();
-	melee_damage_lower = 10;
-	melee_damage_upper = 20;
-	rapid_melee = 2;
-	health = 300;
-	maxHealth = 300;
-	armour_penetration = 0.3
-	},
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "tCG" = (
@@ -21312,9 +21191,7 @@
 /obj/effect/overlay/junk/oldpipes/end{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/renegade/doc{
-	extra_projectiles = 2
-	},
+/mob/living/simple_animal/hostile/renegade/doc/medic,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "uAZ" = (
@@ -23152,9 +23029,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wJg" = (
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
@@ -23343,9 +23218,7 @@
 /area/f13/tunnel)
 "wUB" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/defender{
-	armour_penetration = 0.6
-	},
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
