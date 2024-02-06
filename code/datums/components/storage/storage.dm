@@ -308,6 +308,8 @@
 	return TRUE
 
 /datum/component/storage/proc/set_locked(datum/source, new_state)
+	SIGNAL_HANDLER
+
 	locked = new_state
 	if(check_locked())
 		close_all()
@@ -315,18 +317,24 @@
 /datum/component/storage/proc/close(mob/M)
 	ui_hide(M)
 
-/datum/component/storage/proc/close_all()
+/datum/component/storage/proc/close_all(datum/source)
+	SIGNAL_HANDLER
+
 	. = FALSE
 	for(var/mob/M in can_see_contents())
 		close(M)
 		. = TRUE //returns TRUE if any mobs actually got a close(M) call
 
-/datum/component/storage/proc/check_views()
+/datum/component/storage/proc/check_views(datum/source)
+	SIGNAL_HANDLER
+
 	for(var/mob/M in can_see_contents())
 		if(!isobserver(M) && !M.can_reach(parent, STORAGE_VIEW_DEPTH))
 			close(M)
 
 /datum/component/storage/proc/emp_act(datum/source, severity)
+	SIGNAL_HANDLER
+
 	if(emp_shielded)
 		return
 	var/datum/component/storage/concrete/master = master()
@@ -342,6 +350,8 @@
 	return master._removal_reset(thing)
 
 /datum/component/storage/proc/_remove_and_refresh(datum/source, atom/movable/thing)
+	SIGNAL_HANDLER
+
 	if(LAZYACCESS(ui_item_blocks, thing))
 		var/atom/movable/screen/storage/volumetric_box/center/C = ui_item_blocks[thing]
 		for(var/i in can_see_contents())		//runtimes result if mobs can access post deletion.
@@ -361,7 +371,9 @@
 		return FALSE
 	return master.remove_from_storage(AM, new_location)
 
-/datum/component/storage/proc/refresh_mob_views()
+/datum/component/storage/proc/refresh_mob_views(datum/source)
+	SIGNAL_HANDLER
+
 	var/list/seeing = can_see_contents()
 	for(var/i in seeing)
 		ui_show(i)
@@ -391,6 +403,8 @@
 
 //This proc is called when you want to place an item into the storage item.
 /datum/component/storage/proc/attackby(datum/source, obj/item/I, mob/M, params)
+	SIGNAL_HANDLER
+
 	if(istype(I, /obj/item/hand_labeler))
 		var/obj/item/hand_labeler/labeler = I
 		if(labeler.mode)
@@ -422,6 +436,8 @@
 
 //Abuses the fact that lists are just references, or something like that.
 /datum/component/storage/proc/signal_return_inv(datum/source, list/interface, recursive = TRUE)
+	SIGNAL_HANDLER
+
 	if(!islist(interface))
 		return FALSE
 	interface |= return_inv(recursive)
@@ -464,6 +480,8 @@
 	ui_show(M, !ghost)
 
 /datum/component/storage/proc/mousedrop_receive(datum/source, atom/movable/O, mob/M)
+	SIGNAL_HANDLER
+
 	if(isitem(O))
 		var/obj/item/I = O
 		if(iscarbon(M) || isdrone(M))
@@ -575,28 +593,42 @@
 		O.update_icon()
 
 /datum/component/storage/proc/signal_insertion_attempt(datum/source, obj/item/I, mob/M, silent = FALSE, force = FALSE)
+	SIGNAL_HANDLER
+
 	if((!force && !can_be_inserted(I, TRUE, M)) || (I == parent))
 		return FALSE
 	return handle_item_insertion(I, silent, M)
 
 /datum/component/storage/proc/signal_can_insert(datum/source, obj/item/I, mob/M, silent = FALSE)
+	SIGNAL_HANDLER
+
 	return can_be_inserted(I, silent, M)
 
 /datum/component/storage/proc/show_to_ghost(datum/source, mob/dead/observer/M)
+	SIGNAL_HANDLER
+
 	return user_show_to_mob(M, TRUE, TRUE)
 
 /datum/component/storage/proc/signal_show_attempt(datum/source, mob/showto, force = FALSE)
+	SIGNAL_HANDLER
+
 	return user_show_to_mob(showto, force)
 
-/datum/component/storage/proc/on_check()
+/datum/component/storage/proc/on_check(datum/source)
+	SIGNAL_HANDLER
+
 	return TRUE
 
 /datum/component/storage/proc/check_locked(datum/source, mob/user, message = FALSE)
+	SIGNAL_HANDLER
+
 	. = locked
 	if(message && . && user)
 		to_chat(user, "<span class='warning'>[parent] seems to be locked!</span>")
 
 /datum/component/storage/proc/signal_take_type(datum/source, type, atom/destination, amount = INFINITY, check_adjacent = FALSE, force = FALSE, mob/user, list/inserted)
+	SIGNAL_HANDLER
+
 	if(!force)
 		if(check_adjacent)
 			if(!user || !user.can_reach(destination) || !user.can_reach(parent))
@@ -631,6 +663,8 @@
 	return TRUE
 
 /datum/component/storage/proc/on_attack_hand(datum/source, mob/user)
+	SIGNAL_HANDLER
+
 	var/atom/A = parent
 	if(!attack_hand_interact)
 		return
@@ -655,6 +689,8 @@
 			A.do_jiggle()
 
 /datum/component/storage/proc/signal_on_pickup(datum/source, mob/user)
+	SIGNAL_HANDLER
+
 	var/atom/A = parent
 	update_actions()
 	for(var/mob/M in range(1, A))
@@ -662,42 +698,40 @@
 			close(M)
 
 /datum/component/storage/proc/signal_take_obj(datum/source, atom/movable/AM, new_loc, force = FALSE)
+	SIGNAL_HANDLER
+
 	if(!(AM in real_location()))
 		return FALSE
 	return remove_from_storage(AM, new_loc)
 
 /datum/component/storage/proc/signal_quick_empty(datum/source, atom/loctarget)
+	SIGNAL_HANDLER
+
 	return do_quick_empty(loctarget)
 
 /datum/component/storage/proc/signal_hide_attempt(datum/source, mob/target)
+	SIGNAL_HANDLER
+
 	return ui_hide(target)
 
 /datum/component/storage/proc/on_alt_click(datum/source, mob/user)
-	if(!isliving(user) || !user.can_reach(parent))
+	SIGNAL_HANDLER
+
+	var/atom/real_location = real_location()
+	if(!isliving(user) || !user.can_reach(real_location))
 		return
 	if(check_locked(source, user, TRUE))
-		return TRUE
+		return
 
-	var/atom/A = parent
-	if(!quickdraw)
-		A.add_fingerprint(user)
-		user_show_to_mob(user)
-		if(rustle_sound)
-			playsound(A, "rustle", 50, 1, -5)
-		return TRUE
+	user_show_to_mob(user)
+	if(rustle_sound)
+		playsound(real_location, "rustle", 50, 1, -5)
 
-	if(user.can_hold_items() && !user.incapacitated())
-		var/obj/item/I = locate() in real_location()
-		if(!I)
-			return
-		A.add_fingerprint(user)
-		remove_from_storage(I, get_turf(user))
-		if(!user.put_in_hands(I))
-			user.visible_message("<span class='warning'>[user] fumbles with the [parent], letting [I] fall on the floor.</span>", \
-								"<span class='notice'>You fumble with [parent], letting [I] fall on the floor.</span>")
-			return TRUE
-		user.visible_message("<span class='warning'>[user] draws [I] from [parent]!</span>", "<span class='notice'>You draw [I] from [parent].</span>")
-		return TRUE
+	if(quickdraw && real_location.contents.len && user.can_hold_items() && !user.incapacitated() && user.get_empty_held_indexes())
+		var/obj/item/I = locate() in real_location.contents
+		remove_from_storage(I, user)
+		user.put_in_hands(I)
+		user.visible_message("<span class='warning'>[user] draws \a [I] from \the [real_location]!</span>", "<span class='notice'>You draw \a [I] from \the [real_location].</span>")
 
 /datum/component/storage/proc/action_trigger(datum/action/source, obj/target)
 	gather_mode_switch(source.owner)

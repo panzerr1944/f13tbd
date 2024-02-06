@@ -1906,7 +1906,6 @@
 /area/f13/wasteland/warren)
 "bBQ" = (
 /obj/structure/table,
-/obj/item/ammo_box/a40mmCS,
 /turf/open/floor/f13{
 	dir = 10;
 	icon_state = "redmark"
@@ -4316,6 +4315,17 @@
 /obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"dHx" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars{
+	max_integrity = 800;
+	name = "strong metal bars";
+	obj_integrity = 800
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/wasteland/ncr)
 "dHQ" = (
 /obj/structure/sign/plaques/long/northriver1{
 	pixel_y = 32
@@ -5690,9 +5700,9 @@
 /turf/open/floor/wood/wood_common,
 /area/f13/building)
 "eTK" = (
-/obj/machinery/autolathe/ammo,
 /obj/effect/turf_decal/stripes/line,
 /obj/item/stack/ore/blackpowder/fifty,
+/obj/machinery/autolathe/ammo/unlocked,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floordirtysolid"
 	},
@@ -7036,7 +7046,9 @@
 	name = "strong metal bars";
 	obj_integrity = 800
 	},
-/turf/open/indestructible/ground/outside/sidewalk,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain0"
+	},
 /area/f13/wasteland/ncr)
 "gcL" = (
 /obj/structure/reagent_dispensers/barrel{
@@ -17507,11 +17519,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/warren)
 "pDM" = (
-/obj/structure/simple_door/metal/barred{
-	max_integrity = 800;
-	name = "strong barred door";
-	req_access_txt = "121"
-	},
+/obj/machinery/door/unpowered/secure_NCR,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
 	},
@@ -25183,11 +25191,7 @@
 /turf/open/floor/wood/wood_fancy,
 /area/f13/building)
 "vMH" = (
-/obj/structure/simple_door/metal/barred{
-	max_integrity = 800;
-	name = "strong barred door";
-	req_access_txt = "121"
-	},
+/obj/machinery/door/unpowered/secure_NCR,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
 	},
@@ -52667,7 +52671,7 @@ sKf
 ovZ
 kHs
 afy
-gcy
+dHx
 ovZ
 ovZ
 rje
