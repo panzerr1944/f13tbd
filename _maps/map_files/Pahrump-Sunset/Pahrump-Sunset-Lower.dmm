@@ -3000,10 +3000,7 @@
 /area/f13/tunnel)
 "bKC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/deathclaw/mother{
-	max_mobs = 2
-	},
+/obj/structure/nest/deathclaw/mother,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "bKD" = (
@@ -3536,9 +3533,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bML" = (
-/obj/structure/nest/supermutant/ranged,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
+/obj/structure/nest/deathclaw/mother,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "bMM" = (
 /obj/structure/car,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -3760,7 +3757,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bNA" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin,
+/obj/structure/nest/supermutant/ranged,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "bNB" = (
@@ -6669,14 +6666,6 @@
 	icon_state = "housebase"
 	},
 /area/f13/raiders)
-"cUM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/meister,
-/turf/open/floor/f13{
-	icon_state = "darkrusty"
-	},
-/area/f13/bunker)
 "cUO" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/tunnel,
@@ -7144,6 +7133,14 @@
 /obj/structure/decoration/vent/rusty,
 /turf/closed/wall/rust,
 /area/f13/tunnel/bighorn)
+"dxk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/meister,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "dxl" = (
 /obj/structure/wreck/trash/five_tires{
 	pixel_y = 5
@@ -7219,11 +7216,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"dAo" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/sewer)
 "dAA" = (
 /obj/structure/sign/warning{
 	pixel_x = 6;
@@ -7500,6 +7492,11 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"dSA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "dSS" = (
 /obj/structure/statue/uranium/nuke,
 /obj/effect/decal/cleanable/dirt,
@@ -7579,10 +7576,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"dUJ" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "dUV" = (
 /obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/f13/wood,
@@ -9808,6 +9801,11 @@
 /obj/structure/barricade/bars,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel/bighorn)
+"gFb" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "gFh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -10311,13 +10309,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"hqt" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/renegade/smasher,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "hrd" = (
 /obj/structure/destructible/tribal_torch/lit,
 /obj/effect/decal/cleanable/dirt,
@@ -10668,6 +10659,10 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"hKH" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "hLB" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
@@ -11771,10 +11766,6 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
-"jca" = (
-/mob/living/simple_animal/hostile/renegade/smasher,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
 "jcj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11885,11 +11876,6 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/tunnel)
-"jid" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/supermutant/nightkin,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "jiK" = (
 /obj/structure/closet/crate/coffin,
 /obj/item/stack/sheet/bone,
@@ -13141,12 +13127,24 @@
 	icon_state = "housebase"
 	},
 /area/f13/raiders)
+"kHO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/deathclaw/mother{
+	max_mobs = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "kIk" = (
 /obj/structure/table/wood/settler,
 /obj/item/flashlight/lamp,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"kIB" = (
+/obj/structure/nest/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "kJf" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -15057,11 +15055,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
-"nbS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/deathclaw/mother,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "ncJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/wood{
@@ -15370,7 +15363,6 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/renegade/engie/breacher,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "nwH" = (
@@ -15384,11 +15376,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/f13/tunnel/bighorn)
-"nxr" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "nxJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -15741,6 +15728,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building/massfusion)
+"nUJ" = (
+/mob/living/simple_animal/hostile/renegade/smasher,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "nVg" = (
 /obj/structure/table/wood,
 /obj/machinery/button/door{
@@ -15790,6 +15781,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/building/massfusion)
+"nXd" = (
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "nXD" = (
 /obj/structure/table/wood/settler,
 /obj/effect/decal/cleanable/dirt,
@@ -16876,11 +16871,6 @@
 /obj/structure/fireplace,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/raiders)
-"pjC" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/supermutant/nightkin,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/sewer)
 "pjD" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop3"
@@ -20152,11 +20142,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/followers)
-"tiO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/deathclaw,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "tja" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 6
@@ -20520,10 +20505,10 @@
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
 "tBI" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/renegade/smasher,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/supermutant/nightkin,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/area/f13/sewer)
 "tCG" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
@@ -20549,10 +20534,6 @@
 	pixel_y = -3
 	},
 /turf/closed/wall/f13/tunnel,
-/area/f13/tunnel)
-"tFo" = (
-/obj/structure/nest/deathclaw,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "tGO" = (
 /obj/structure/handrail/g_central{
@@ -20731,10 +20712,6 @@
 /obj/structure/grille/broken,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
-"tSf" = (
-/obj/structure/nest/deathclaw/mother,
-/turf/open/floor/f13/wood,
-/area/f13/building)
 "tSg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/glowstick,
@@ -21233,6 +21210,11 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/bighorn)
+"uzi" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "uzo" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
@@ -22561,6 +22543,11 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/tunnel/bighorn)
+"wej" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/sewer)
 "wer" = (
 /obj/structure/nest/spider{
 	max_mobs = 3
@@ -32976,7 +32963,7 @@ tKO
 bFx
 amz
 wQP
-hqt
+bAv
 boU
 boU
 boU
@@ -36049,7 +36036,7 @@ boU
 svG
 aah
 aah
-jca
+nUJ
 rNd
 rNd
 qwJ
@@ -36306,7 +36293,7 @@ rNd
 uKD
 rNd
 rNd
-tBI
+rNd
 bAv
 aah
 bFx
@@ -38382,7 +38369,7 @@ qgP
 qgP
 aaD
 jsf
-aaD
+lfG
 qgP
 aaD
 qgP
@@ -38895,7 +38882,7 @@ aae
 qgP
 fiw
 fpL
-cUM
+dxk
 eCx
 aFy
 aae
@@ -52333,7 +52320,7 @@ alc
 abP
 abP
 bMF
-tSf
+bML
 bhT
 abP
 aaa
@@ -52589,7 +52576,7 @@ alc
 bMW
 pgO
 abP
-nxr
+gFb
 alc
 alc
 abP
@@ -54126,7 +54113,7 @@ aae
 aae
 aae
 boU
-tFo
+kIB
 aae
 aae
 aae
@@ -74243,7 +74230,7 @@ uwl
 kyE
 bQA
 nFK
-bML
+bNA
 cPB
 bQA
 bQA
@@ -79146,7 +79133,7 @@ bQA
 uwl
 uwl
 bTk
-jid
+tBI
 bTk
 sFE
 bQA
@@ -82227,7 +82214,7 @@ cux
 bQA
 bQA
 bQA
-dUJ
+nXd
 fSh
 bTk
 bZg
@@ -82741,7 +82728,7 @@ bQA
 uwl
 uwl
 bTk
-dAo
+wej
 uND
 bnm
 bZg
@@ -83243,7 +83230,7 @@ uwl
 xuY
 bQA
 xMn
-pjC
+uzi
 hrd
 bQA
 xMn
@@ -83757,7 +83744,7 @@ uwl
 fNk
 cux
 hrd
-bNA
+hKH
 xMn
 bTk
 hrd
@@ -84495,7 +84482,7 @@ aaB
 aaB
 aaB
 rlm
-nbS
+bKC
 ilG
 ilG
 uhz
@@ -87317,7 +87304,7 @@ rlm
 xKq
 rlm
 rlm
-tiO
+dSA
 aaB
 tRu
 uwl
@@ -87575,7 +87562,7 @@ rlm
 aaB
 jcj
 lxc
-bKC
+kHO
 rlm
 aaa
 uwl
