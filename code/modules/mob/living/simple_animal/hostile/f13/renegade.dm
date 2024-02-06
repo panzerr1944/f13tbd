@@ -47,7 +47,7 @@
 	icon_living = "renegade_smasher"
 	icon_dead = "renegade_smasher-dead"
 	melee_damage_lower = 20
-	melee_damage_higher = 30
+	melee_damage_upper = 30
 	rapid_melee = 2
 	stat_attack = UNCONSCIOUS //will finish you off
 
