@@ -226,17 +226,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/vault)
 "ajC" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
-/obj/item/binoculars,
-/obj/item/binoculars,
-/obj/item/binoculars,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/turf/open/floor/f13/wood,
-/area/f13/city)
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/handy/assaultron,
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/area/f13/bunker)
 "akg" = (
 /obj/structure/sign/warning/radiation{
 	pixel_y = 30
@@ -3933,11 +3926,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
-"esY" = (
-/obj/structure/chair/bench,
-/mob/living/simple_animal/hostile/renegade/doc/medic,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "etj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/barber{
@@ -4251,6 +4239,7 @@
 /area/f13/caves)
 "eNt" = (
 /obj/structure/bed,
+/mob/living/simple_animal/hostile/renegade/doc/medic,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -4328,6 +4317,7 @@
 	icon_state = "mattress2";
 	pixel_y = -3
 	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -5332,6 +5322,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -5493,7 +5484,7 @@
 /area/f13/bunker)
 "ghe" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -6348,12 +6339,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/vault)
-"hja" = (
-/mob/living/simple_animal/hostile/renegade/engie/breacher,
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
-	},
-/area/f13/city)
 "hji" = (
 /obj/effect/decal/cleanable/blood/gibs/human/body,
 /obj/effect/decal/cleanable/dirt,
@@ -6409,7 +6394,7 @@
 	},
 /area/f13/ahs)
 "hlY" = (
-/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
+/mob/living/simple_animal/hostile/renegade/engie/breacher,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -9039,6 +9024,12 @@
 	icon_state = "freezerfloor"
 	},
 /area/f13/city)
+"kef" = (
+/mob/living/simple_animal/hostile/renegade/engie/breacher,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/city)
 "kfk" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -9930,6 +9921,10 @@
 	},
 /turf/open/floor/f13,
 /area/f13/city)
+"kXV" = (
+/mob/living/simple_animal/hostile/handy/assaultron,
+/turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
+/area/f13/bunker)
 "kYc" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/barber{
@@ -10634,6 +10629,11 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"lKZ" = (
+/obj/structure/chair/bench,
+/mob/living/simple_animal/hostile/renegade/doc/medic,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "lLl" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/alcoholspawner{
@@ -11489,9 +11489,7 @@
 	pixel_x = -10;
 	pixel_y = 13
 	},
-/mob/living/simple_animal/hostile/renegade/soldier{
-	retreat_distance = null
-	},
+/mob/living/simple_animal/hostile/renegade/doc/medic,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -15049,6 +15047,12 @@
 	icon_state = "rampdowntop"
 	},
 /area/f13/vault)
+"qpG" = (
+/mob/living/simple_animal/hostile/handy/assaultron,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/bunker)
 "qpH" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -16165,7 +16169,7 @@
 /area/f13/city)
 "rCb" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/renegade/engie/breacher,
+/mob/living/simple_animal/hostile/renegade/defender/assaulter,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -16844,6 +16848,14 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/neutral,
 /area/f13/vault)
+"spX" = (
+/mob/living/simple_animal/hostile/renegade/smasher,
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "sqY" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -17194,13 +17206,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/vault)
 "sJs" = (
-/obj/structure/railing{
-	dir = 8
-	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/f13{
-	color = "#ffe9de";
-	icon_state = "darkrusty";
-	name = "dirty floor"
+	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
 "sJw" = (
@@ -18271,7 +18280,7 @@
 /area/f13/wasteland)
 "tZf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/shutters,
+/mob/living/simple_animal/hostile/renegade/smasher,
 /turf/open/floor/f13{
 	color = "#ffe9de";
 	icon_state = "darkrusty";
@@ -19507,6 +19516,18 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
+"vhy" = (
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/lowmid,
+/obj/item/binoculars,
+/obj/item/binoculars,
+/obj/item/binoculars,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/item/flashlight/seclite,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/turf/open/floor/f13/wood,
+/area/f13/city)
 "vil" = (
 /obj/structure/table,
 /obj/machinery/light,
@@ -21254,6 +21275,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
+"xdK" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner,
+/turf/open/floor/f13{
+	color = "#ffe9de";
+	icon_state = "darkrusty";
+	name = "dirty floor"
+	},
+/area/f13/bunker)
 "xfc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/trash/f13/steak,
@@ -22120,8 +22150,8 @@
 	},
 /area/f13/ahs)
 "yjC" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
 /obj/structure/guncase,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/bunker)
 "yjN" = (
@@ -28637,7 +28667,7 @@ uZG
 ucH
 ucH
 pNm
-sJs
+sGU
 tZf
 kCh
 kFy
@@ -28894,8 +28924,8 @@ jtE
 ucH
 ucH
 ucH
-lwy
-tZf
+sGU
+xdK
 rCb
 hch
 lwy
@@ -29151,8 +29181,8 @@ uZG
 ucH
 ucH
 eHD
-lwy
 sGU
+spX
 hlY
 kFy
 lwy
@@ -30087,7 +30117,7 @@ lOD
 sfc
 wYa
 sfc
-ajC
+vhy
 tGX
 tGX
 aTA
@@ -32500,7 +32530,7 @@ nXe
 kjM
 ceJ
 qUl
-eWH
+sJs
 qUl
 rsh
 vhj
@@ -36350,9 +36380,9 @@ hrZ
 hrZ
 hrZ
 oqm
-tCz
+ajC
 iDn
-tpo
+kXV
 oqm
 oqm
 pMs
@@ -36865,7 +36895,7 @@ hrZ
 hrZ
 oqm
 tpo
-uXf
+qpG
 tpo
 oqm
 oqm
@@ -38292,7 +38322,7 @@ sfc
 sfc
 vdm
 rWK
-esY
+lKZ
 uLm
 uLm
 gWc
@@ -39844,7 +39874,7 @@ akh
 akh
 nph
 lOD
-hja
+kef
 rdM
 cfX
 pYx

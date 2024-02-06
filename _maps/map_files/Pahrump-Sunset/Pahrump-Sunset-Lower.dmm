@@ -2999,10 +2999,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bKC" = (
-/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/wood_fancy/wood_fancy_dark,
-/area/f13/building)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/deathclaw/mother{
+	max_mobs = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "bKD" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/floor/f13{
@@ -3533,9 +3536,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bML" = (
-/obj/structure/closet/crate/coffin,
-/turf/closed/mineral/random/low_chance,
-/area/f13/caves)
+/obj/structure/nest/supermutant/ranged,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "bMM" = (
 /obj/structure/car,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -3585,7 +3588,7 @@
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibtorso"
 	},
-/mob/living/simple_animal/hostile/deathclaw,
+/obj/structure/nest/deathclaw,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bMX" = (
@@ -3757,9 +3760,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bNA" = (
-/mob/living/simple_animal/hostile/deathclaw,
-/turf/open/floor/f13/wood,
-/area/f13/building)
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "bNB" = (
 /obj/effect/spawner/lootdrop/f13/cash_ncr_med,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6666,6 +6669,14 @@
 	icon_state = "housebase"
 	},
 /area/f13/raiders)
+"cUM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/renegade/meister,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/bunker)
 "cUO" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/tunnel,
@@ -7208,6 +7219,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"dAo" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/sewer)
 "dAA" = (
 /obj/structure/sign/warning{
 	pixel_x = 6;
@@ -7482,7 +7498,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/generic,
-/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "dSS" = (
@@ -7564,6 +7579,10 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"dUJ" = (
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "dUV" = (
 /obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/f13/wood,
@@ -10292,6 +10311,13 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"hqt" = (
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/renegade/smasher,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "hrd" = (
 /obj/structure/destructible/tribal_torch/lit,
 /obj/effect/decal/cleanable/dirt,
@@ -11610,6 +11636,7 @@
 /obj/structure/chair/f13foldupchair{
 	dir = 8
 	},
+/mob/living/simple_animal/hostile/renegade/grunt/gunner,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
 	},
@@ -11744,6 +11771,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"jca" = (
+/mob/living/simple_animal/hostile/renegade/smasher,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "jcj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11854,6 +11885,11 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/tunnel)
+"jid" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/supermutant/nightkin,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "jiK" = (
 /obj/structure/closet/crate/coffin,
 /obj/item/stack/sheet/bone,
@@ -12061,7 +12097,10 @@
 /area/f13/caves)
 "jvw" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jvL" = (
@@ -12691,9 +12730,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/ballistic/automatic/assault_rifle/assault_carbine,
-/obj/item/ammo_box/magazine/m5mm,
-/obj/item/ammo_box/magazine/m5mm,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark,
 /area/f13/building)
 "kkR" = (
@@ -13202,6 +13239,7 @@
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /turf/open/floor/wood/wood_fancy/wood_fancy_dark{
 	icon_state = "fancy_dark-broken4"
 	},
@@ -15019,6 +15057,11 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/tunnel)
+"nbS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/deathclaw/mother,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "ncJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/wood{
@@ -15327,6 +15370,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
+/mob/living/simple_animal/hostile/renegade/engie/breacher,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "nwH" = (
@@ -15340,6 +15384,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/f13/tunnel/bighorn)
+"nxr" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "nxJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -16557,6 +16606,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "oSA" = (
@@ -16826,6 +16876,11 @@
 /obj/structure/fireplace,
 /turf/open/floor/wood/wood_mosaic,
 /area/f13/raiders)
+"pjC" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/sewer)
 "pjD" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop3"
@@ -19458,6 +19513,7 @@
 	pixel_x = 18;
 	pixel_y = 12
 	},
+/obj/structure/nest/supermutant/nightkin,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "srO" = (
@@ -19500,6 +19556,7 @@
 /area/f13/caves)
 "stX" = (
 /obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
 /turf/open/floor/f13/wood,
 /area/f13/building)
@@ -20095,6 +20152,11 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/followers)
+"tiO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "tja" = (
 /obj/effect/overlay/junk/oldpipes{
 	dir = 6
@@ -20488,6 +20550,10 @@
 	},
 /turf/closed/wall/f13/tunnel,
 /area/f13/tunnel)
+"tFo" = (
+/obj/structure/nest/deathclaw,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "tGO" = (
 /obj/structure/handrail/g_central{
 	dir = 8;
@@ -20665,6 +20731,10 @@
 /obj/structure/grille/broken,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"tSf" = (
+/obj/structure/nest/deathclaw/mother,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "tSg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/glowstick,
@@ -32906,7 +32976,7 @@ tKO
 bFx
 amz
 wQP
-bAv
+hqt
 boU
 boU
 boU
@@ -35979,7 +36049,7 @@ boU
 svG
 aah
 aah
-aah
+jca
 rNd
 rNd
 qwJ
@@ -38825,7 +38895,7 @@ aae
 qgP
 fiw
 fpL
-okd
+cUM
 eCx
 aFy
 aae
@@ -50461,13 +50531,13 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aae
 bsC
 oNM
@@ -50718,13 +50788,13 @@ aae
 aae
 aae
 aae
-aae
+aaa
 abP
 abP
 abP
 abP
 abP
-aae
+aaa
 aae
 bsC
 bKb
@@ -50973,15 +51043,15 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
 abP
 oSp
 jvw
 stX
 abP
-aae
+aaa
 aae
 bsC
 bPR
@@ -51230,7 +51300,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 abP
 abP
 abP
@@ -51238,7 +51308,7 @@ bNt
 alc
 alc
 abP
-aae
+aaa
 aae
 bsC
 iTT
@@ -51484,10 +51554,10 @@ aae
 aae
 aae
 aae
-aae
-aae
-aae
-bML
+aaa
+aaa
+aaa
+aaa
 abP
 bNh
 ang
@@ -51495,7 +51565,7 @@ alc
 alc
 auM
 abP
-aae
+aaa
 aae
 bsC
 oNM
@@ -51741,7 +51811,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 abP
 abP
 abP
@@ -51752,7 +51822,7 @@ abP
 ang
 abP
 abP
-aae
+aaa
 aae
 bsC
 oNM
@@ -51998,7 +52068,7 @@ aae
 aak
 aae
 aae
-aae
+aaa
 abP
 bMs
 alc
@@ -52006,10 +52076,10 @@ alc
 alc
 ang
 bNu
-bNA
+alc
 pgO
 abP
-aae
+aaa
 aae
 bsC
 oNM
@@ -52255,7 +52325,7 @@ aae
 aak
 aae
 aae
-aae
+aaa
 abP
 abP
 abP
@@ -52263,10 +52333,10 @@ alc
 abP
 abP
 bMF
-alc
+tSf
 bhT
 abP
-aae
+aaa
 aae
 bsC
 gUU
@@ -52512,18 +52582,18 @@ aae
 aak
 aae
 aae
-aae
+aaa
 abP
 bsK
 alc
 bMW
 pgO
 abP
-pgO
+nxr
 alc
 alc
 abP
-aae
+aaa
 aae
 bsC
 bPR
@@ -52769,18 +52839,18 @@ aae
 aak
 aae
 aae
-aae
+aaa
 abP
 bMt
 alc
 bgX
 pgO
 abP
-bsK
+bMF
 alc
 bND
 abP
-aae
+aaa
 aae
 bsC
 oNM
@@ -53026,7 +53096,7 @@ aae
 aae
 aae
 aae
-aae
+aaa
 abP
 abP
 ang
@@ -53037,7 +53107,7 @@ abP
 abP
 abP
 abP
-aae
+aaa
 aae
 bsC
 oNM
@@ -53288,13 +53358,13 @@ aae
 aae
 boU
 aae
-aae
-aae
-aae
-aae
-aae
-aae
-aae
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aae
 bsC
 oNM
@@ -54056,7 +54126,7 @@ aae
 aae
 aae
 boU
-bOU
+tFo
 aae
 aae
 aae
@@ -74173,7 +74243,7 @@ uwl
 kyE
 bQA
 nFK
-bQA
+bML
 cPB
 bQA
 bQA
@@ -79076,7 +79146,7 @@ bQA
 uwl
 uwl
 bTk
-bTk
+jid
 bTk
 sFE
 bQA
@@ -81112,7 +81182,7 @@ aaa
 tfj
 tCG
 mWg
-bKC
+shB
 shB
 tfj
 miN
@@ -82157,7 +82227,7 @@ cux
 bQA
 bQA
 bQA
-bQA
+dUJ
 fSh
 bTk
 bZg
@@ -82671,7 +82741,7 @@ bQA
 uwl
 uwl
 bTk
-bnm
+dAo
 uND
 bnm
 bZg
@@ -83173,7 +83243,7 @@ uwl
 xuY
 bQA
 xMn
-bTk
+pjC
 hrd
 bQA
 xMn
@@ -83687,7 +83757,7 @@ uwl
 fNk
 cux
 hrd
-bQA
+bNA
 xMn
 bTk
 hrd
@@ -84167,7 +84237,7 @@ aaB
 tRu
 aaa
 tRu
-aaB
+wki
 aaB
 abV
 aaa
@@ -84425,7 +84495,7 @@ aaB
 aaB
 aaB
 rlm
-rlm
+nbS
 ilG
 ilG
 uhz
@@ -85184,7 +85254,7 @@ nHg
 tBj
 vqg
 aaB
-aaB
+abV
 rlm
 tRu
 aaa
@@ -85440,7 +85510,7 @@ nHg
 nHg
 aaa
 uhz
-aaB
+abV
 aaB
 aaB
 rlm
@@ -85449,8 +85519,8 @@ rlm
 qoo
 mDs
 tRu
-rlm
-rlm
+mDs
+mDs
 apc
 uwl
 aak
@@ -85685,7 +85755,7 @@ aae
 aaa
 nHg
 vSQ
-vSQ
+juA
 flZ
 atA
 vqg
@@ -85708,7 +85778,7 @@ aaa
 aaa
 aaa
 aaB
-aaB
+abV
 aaB
 aaB
 rlm
@@ -86729,7 +86799,7 @@ uwl
 aak
 rlm
 rlm
-aaB
+abV
 aaa
 uhz
 rlm
@@ -86985,7 +87055,7 @@ aaa
 uwl
 uwl
 aaB
-aaB
+abV
 aaB
 aaa
 aaa
@@ -87247,7 +87317,7 @@ rlm
 xKq
 rlm
 rlm
-rlm
+tiO
 aaB
 tRu
 uwl
@@ -87505,7 +87575,7 @@ rlm
 aaB
 jcj
 lxc
-jcj
+bKC
 rlm
 aaa
 uwl
