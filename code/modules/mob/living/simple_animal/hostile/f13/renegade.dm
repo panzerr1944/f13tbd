@@ -35,6 +35,21 @@
 	summon_backup(10)
 	say("Target spotted!")
 
+// ADVANCED LIGHT MELEE VARIANT
+/mob/living/simple_animal/hostile/renegade/smasher
+	name = "Renegade Smasher"
+	desc = "A raider recently inducted among the Renegades- although clearly with a fair amount of experience to draw from, a riot shield a penchant for extreme violence. He's going to make sure your dead."
+	armour_penetration = 0.4
+	health = 300
+	maxHealth = 300
+	loot = list()
+	icon_state = "renegade_smasher"
+	icon_living = "renegade_smasher"
+	icon_dead = "renegade_smasher-dead"
+	melee_damage_lower = 20
+	melee_damage_higher = 30
+	rapid_melee = 2
+	stat_attack = UNCONSCIOUS //will finish you off
 
 // LIGHT RANGED VARIANT
 /mob/living/simple_animal/hostile/renegade/grunt
@@ -59,6 +74,15 @@
 	speak = list("Come get some!", "Fuck off!", "Landon's going to promote me after this!", "Bullets for days!", "Renegades represent!")
 	speak_emote = list("says")
 	speak_chance = 1
+
+// ADVANDED LIGHT RANGED VARIANT
+/mob/living/simple_animal/hostile/renegade/grunt/gunner
+	name = "Renegade Gunner"
+	desc = "The standard issue muscle employed among the Renegades- equipped with an extended magazine burst-fire 10mm sub-machine gun. As if to show off his position, he's got red highlights on his shoulder pads."
+	extra_projectiles = 4
+	icon_state = "renegade_gunner"
+	icon_living = "renegade_gunner"
+	icon_dead = "renegade_gunner-dead"
 
 // LIGHT SHOTGUN VARIANT
 /mob/living/simple_animal/hostile/renegade/engie
@@ -86,6 +110,16 @@
 	speak_emote = list("says")
 	speak_chance = 1
 
+// ADVANCED LIGHT SHOTGUN VARIANT
+/mob/living/simple_animal/hostile/renegade/engie/breacher
+	name = "Renegade Breacher"
+	desc = "Demolitions and engineering expert of the Renegades, wearing an old, stolen trooper helmet- equipped with a spare sledgehammer for faster wallbusting and an unholy double-barreled pump-action shotgun"
+	environment_smash = ENVIRONMENT_SMASH_RWALLS
+	extra_projectiles = 1
+	icon_state = "renegade_breacher"
+	icon_living = "renegade_breacher"
+	icon_dead = "renegade_breacher-dead"
+
 // MEDIUM RANGED VARIANT
 /mob/living/simple_animal/hostile/renegade/soldier
 	name = "Renegade Soldier"
@@ -111,7 +145,7 @@
 	speak_emote = list("says")
 	speak_chance = 1
 
-//MEDIUM MELEE VARIANT
+// MEDIUM MELEE VARIANT
 /mob/living/simple_animal/hostile/renegade/defender
 	name = "Renegade Defender"
 	desc = "The Renegade member who's sole purpose is to withstand punishment with layers of advanced combat armor."
@@ -136,7 +170,16 @@
 	speak_emote = list("says")
 	speak_chance = 1
 
-//HEAVY RANGED VARIANT
+// ADVANCED MEDIUM MELEE VARIANT
+/mob/living/simple_animal/hostile/renegade/defender/assaulter
+	name = "Renegade Assaulter"
+	desc = "The Renegade member who's sole purpose is to withstand punishment with layers of advanced combat armor- and dish out just as much with a well placed violent mace swing. As if to flaunt who's about to smack your skull in- there's a huge red R painted into his shield."
+	armour_penetration = 0.6
+	icon_state = "renegade_assaulter"
+	icon_living = "renegade_assaulter"
+	icon_dead = "renegade_assaulter-dead"
+
+// HEAVY RANGED VARIANT
 /mob/living/simple_animal/hostile/renegade/drifter
 	name = "Renegade Drifter"
 	desc = "A veteran of the Renegades, specializing in recon and long range engagements."
@@ -162,6 +205,20 @@
 	speak_emote = list("says")
 	speak_chance = 1
 
+// ADVANCED HEAVY RANGED VARIANT
+/mob/living/simple_animal/hostile/renegade/drifter/sniper
+	name = "Renegade Sniper"
+	desc = "A veteran of the Renegades, specializing in recon and long range engagements and equipped with old, stolen riot gear- with no regard for the safety of their comrades so long as their target went down."
+	armour_penetration = 0.2
+	check_friendly_fire = 0
+	health = 300
+	maxHealth = 300
+	minimum_distance = 8
+	vision_range = 15
+	icon_state = "renegade_sniper"
+	icon_living = "renegade_sniper"
+	icon_dead = "renegade_sniper-dead"
+
 // HEAVY SHOTGUN VARIANT
 /mob/living/simple_animal/hostile/renegade/guardian
 	name = "Renegade Guardian"
@@ -185,6 +242,18 @@
 	speak = list("GET SOME!", "ON THE GROUND!", "GOING TO SHOVE THIS WHERE THE SUN DON'T SHINE!", "C'MERE, I GOT LEAD!", "RENEGADES REPRESENT!")
 	speak_emote = list("says")
 	speak_chance = 1
+
+// ADVANCED HEAVY SHOTGUN VARIANT
+/mob/living/simple_animal/hostile/renegade/guardian/shotgunner
+	name = "Renegade Shotgunner"
+	desc = "A veteran of the Renegades,specializing in close quarters and crowd control.. with an automatic full-metal burst-fire slug shotgun and advanced CQC training. Akin to certain gunners, this shotgunner has painted his shoulder-pads with red highlights."
+	armour_penetration = 5
+	extra_projectiles = 2
+	melee_queue_distance = 2
+	rapid_melee = 2
+	icon_state = "renegade_shotgunner"
+	icon_living = "renegade_shotgunner"
+	icon_dead = "renegade_shotgunner-dead"
 
 // POWER ARMOR VARIANT
 /mob/living/simple_animal/hostile/renegade/meister
@@ -214,6 +283,20 @@
 
 /mob/living/simple_animal/hostile/renegade/meister/movement_delay()
 	return 6
+
+/mob/living/simple_animal/hostile/renegade/meister/heavy
+	name = "Renegade Heavy"
+	desc = "Is that a merc in layered advanced combat armor, high on drugs?! Holy shit, that's a big gun!"
+	aggro_vision_range = 14
+	armour_penetration = 0.8
+	check_friendly_fire = 0
+	environment_smash = ENVIRONMENT_SMASH_RWALLS
+	extra_projectiles = 7
+	rapid_melee = 2
+	retreat_distance = 2
+	icon_state = "renegade_heavy"
+	icon_living = "renegade_heavy"
+	icon_dead = "renegade_heavy-dead"
 
 // HEALER VARIANT
 /mob/living/simple_animal/hostile/renegade/doc
@@ -245,3 +328,33 @@
 	// aka 40% of max life every tick, which is basically unkillable
 	// TODO: refactor this if simple_animals ever get damage types
 	AddComponent(/datum/component/glow_heal, chosen_targets = /mob/living/simple_animal/hostile/renegade, allow_revival = FALSE, restrict_faction = list("raider"), type_healing = BRUTELOSS)
+
+// ADVANCED HEALER VARIANT
+/mob/living/simple_animal/hostile/renegade/doc/medic
+	name = "Renegade Medic"
+	desc = "A veteran of the Renegades, this one specializing in field first aid with a rapid-fanning .44 magnum revolver. He seems to know if you're alive or dead, if the way he's checking a health scanner is anything to go off. No fooling this guy- he's making sure you're dead."
+	extra_projectiles = 2
+	stat_attack = UNCONSCIOUS
+
+// THE BOSS. THE BIG ONE. THE BIG CHEESE
+/mob/living/simple_animal/hostile/raider/junker/boss/renegade
+	name = "Renegade Boss"
+	desc = "A Renegade boss, clad in hotrod power armor, and wielding a deadly rapid-fire shrapnel cannon. He's had enough of your shit."
+	faction = list("raider","wastebot","hostile","supermutant","ghoul")
+	aggro_vision_range = 15
+	armour_penetration = 0.8
+	environment_smash = ENVIRONMENT_SMASH_RWALLS
+	extra_projectiles = 7
+	health = 1250
+	maxHealth = 1250
+	melee_damage_upper = 50
+	minimum_distance = 0
+	obj_damage = 500
+	rapid_melee = 2
+	retreat_distance = 0
+	vision_range = 15
+	icon = 'icons/fallout/mobs/humans/renegade.dmi'
+	icon_state = "renegade_boss"
+	icon_living = "renegade_boss"
+	icon_dead = "renegade_boss-dead"
+
